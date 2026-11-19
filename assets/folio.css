@@ -1,0 +1,19 @@
+/* A shared photographic masthead for the two reference sections. */
+main .atelier-intro{width:var(--width);margin:1.25rem auto 0;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);min-height:23rem;background:#1c2b24;color:#f5f2e6;border:0}
+main .atelier-intro .wrap{width:auto;align-self:center;padding:clamp(2rem,4.3vw,4.5rem)}
+main .atelier-intro h1{font-size:clamp(2.8rem,4.8vw,5.4rem)}
+main .atelier-intro .eyebrow{color:#dbc18c}
+main .atelier-intro .lead{color:#e3e6dc;font-size:clamp(1rem,1.3vw,1.22rem)}
+main .atelier-intro-img{overflow:hidden;min-width:0;position:relative;margin:0}
+main .atelier-intro-img img{position:absolute;width:100%;height:100%;inset:0;object-fit:cover}
+main .atelier-intro .textlink{color:#f6f3df}
+main .atelier-intro .button{background:#dfc792;color:#222d25;border-color:#dfc792}
+.page-versandankauf main .atelier-intro-img img{object-position:60% 60%}
+main .folio-intro{background:#eee8d9}
+main .folio-intro .wrap{position:relative}
+main .folio-intro .eyebrow{color:#73552c}
+@media(max-width:700px){
+ main .atelier-intro{grid-template-columns:1fr;width:100%;min-height:0}
+ main .atelier-intro .wrap{padding:2rem 5%}
+ main .atelier-intro-img{aspect-ratio:2.65}
+}

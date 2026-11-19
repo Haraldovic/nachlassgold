@@ -1,0 +1,52 @@
+:root {
+  --haus-ink:#242420; --haus-paper:#fbf9f3; --haus-gold:#ad8b53; --haus-hair:#d8d1c2;
+  --haus-serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+  --haus-sans:"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+header.dv-head, .dv-head * {box-sizing:border-box}
+header.dv-head {position:relative;z-index:5;background:var(--haus-paper);color:var(--haus-ink);font:400 16px/1.35 var(--haus-sans);border-bottom:1px solid var(--haus-hair)}
+.dv-head a,.dv-head button {color:inherit;font-family:inherit}
+.dv-head a{text-decoration:none}
+.dv-inner {width:min(90%,86rem);margin-inline:auto}
+.dv-top {background:#232421;color:#ece9dd}
+.dv-top .dv-inner {min-height:31px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.dv-location {font:500 .64rem/1.1 var(--haus-sans);text-transform:uppercase;letter-spacing:.18em;white-space:nowrap}
+.dv-head .dv-worlds {display:flex;align-items:stretch;gap:clamp(.95rem,2vw,2.1rem);line-height:1}
+.dv-head .dv-worlds a {position:relative;color:#e9e5da;font-size:.72rem;display:inline-flex;align-items:center;min-height:31px}
+.dv-head .dv-worlds a.dv-active {color:#f1d79b}
+.dv-worlds a.dv-active::after {content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:#cba35d}
+.dv-head .dv-worlds a:hover,.dv-links a:hover {text-decoration:underline;text-underline-offset:.31em}
+.dv-core {display:flex;justify-content:space-between;align-items:center;gap:1.6rem;min-height:78px;position:relative}
+.dv-logo {display:flex;align-items:center;gap:.67rem;flex:none}
+.dv-logo img {width:40px;height:45px;max-width:none;object-fit:contain}
+.dv-logo>span {display:flex;flex-direction:column;gap:.29rem}
+.dv-logo strong {font:500 clamp(1.36rem,2.2vw,2.22rem)/.99 var(--haus-serif);letter-spacing:-.046em;white-space:nowrap}
+.dv-logo small {font:600 .56rem/1.2 var(--haus-sans);letter-spacing:.17em;text-transform:uppercase;color:#66573c}
+.dv-head .dv-links {display:flex;gap:clamp(.78rem,1.7vw,1.65rem);align-items:center;font-size:.855rem}
+.dv-links a {display:flex;align-items:center;min-height:44px;white-space:nowrap}
+.dv-links a[aria-current="page"] {text-decoration:underline;text-underline-offset:.37em}
+.dv-links a.dv-contact {border:1px solid #9e9172;min-height:38px;padding:.45rem .85rem}
+.dv-menu {border:1px solid #9f937c;border-radius:0;background:transparent;padding:.62rem .82rem;min-height:42px;cursor:pointer;display:none;align-items:center;gap:.5rem;font:550 .8rem/1 var(--haus-sans)}
+.dv-menu i {display:block;width:15px;height:7px;border-block:1px solid}
+.dv-head a:focus-visible,.dv-head button:focus-visible,.dv-atlas-call a:focus-visible {outline:2px solid #b58d40;outline-offset:3px}
+.dv-atlas-call {width:min(87.5%,78rem);margin:clamp(2.5rem,6vw,6rem) auto;display:flex;gap:2rem;align-items:center;justify-content:space-between;border-block:1px solid #c2b298;padding:clamp(1.45rem,4vw,3rem) 0;color:#382f27}
+.dv-atlas-call h2 {font:400 clamp(1.85rem,3.4vw,3.5rem)/1.05 var(--haus-serif);letter-spacing:-.045em;margin:0 0 .53rem}
+.dv-atlas-call p {margin:0;max-width:52ch;font:400 .97rem/1.55 var(--haus-sans)}
+.dv-atlas-call a {font:600 .87rem/1.3 var(--haus-sans);white-space:nowrap;text-decoration:underline;text-underline-offset:.3em;color:inherit}
+@media(max-width:980px){
+  .dv-core {flex-wrap:wrap;min-height:64px;gap:0;padding-block:.55rem}
+  .dv-js .dv-menu {display:inline-flex}
+  .dv-js .dv-links:not(.dv-open) {display:none}
+  .dv-head .dv-links {width:100%;flex-wrap:wrap;gap:0 1.2rem;border-top:1px solid var(--haus-hair);margin-top:.65rem;padding:.35rem 0}
+  .dv-head.dv-js .dv-links.dv-open {display:grid;grid-template-columns:repeat(2,1fr)}
+  .dv-head .dv-links .dv-contact {padding:0;border:0;min-height:44px}
+  .dv-logo img {width:33px;height:39px}
+}
+@media(max-width:580px){
+  .dv-inner {width:90%}
+  .dv-location {display:none}
+  .dv-head .dv-worlds {justify-content:space-between;width:100%;gap:.35rem}
+  .dv-logo strong {font-size:1.52rem}
+  .dv-core {min-height:62px}
+  .dv-atlas-call {align-items:start;flex-direction:column;gap:1rem}
+}

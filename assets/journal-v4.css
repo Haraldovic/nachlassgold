@@ -1,0 +1,74 @@
+:root{
+  --v-paper:#f7f1e8;--v-ink:#1c1b1a;--v-stone:#4a4741;--v-rule:#e1dcd3;--v-brass:#836134;--v-white:#fffdf9;
+  --v-ser:"Cormorant Garamond","Iowan Old Style",Georgia,serif;--v-sans:"DM Sans","Helvetica Neue",Arial,sans-serif;
+  --haus-serif:var(--v-ser);--haus-sans:var(--v-sans);--haus-gold:var(--v-brass);--haus-paper:var(--v-paper);--haus-hair:var(--v-rule);--haus-ink:var(--v-ink);
+}
+body.journal-v4{
+  --serif:var(--v-ser);--sans:var(--v-sans);--paper:var(--v-paper);--ink:var(--v-ink);--muted:var(--v-stone);
+  --hair:var(--v-rule);--panel:#eee7da;--link:#704f28;--width:min(90%,87rem);
+  font-family:var(--v-sans);color:var(--v-ink);background:var(--v-paper);font-optical-sizing:auto;
+}
+.journal-v4 :where(button,input,textarea,select){font-family:var(--v-sans)}
+.journal-v4 :where(h1,h2,h3){font-family:var(--v-ser);font-weight:400}
+.journal-v4 ::selection{background:#dec99d;color:#292318}
+.journal-v4 .dv-head{background:var(--v-paper);border-bottom-color:#dcd3c3}
+.journal-v4 .dv-inner{width:min(90%,87rem)}
+.journal-v4 .dv-top{background:#eee7db;color:#332f2a;border-bottom:1px solid #dfd7c8}
+.journal-v4 .dv-top .dv-inner{min-height:33px}
+.journal-v4 .dv-head .dv-location{font:550 .77rem/1.25 var(--v-sans);letter-spacing:.035em;text-transform:none}
+.journal-v4 .dv-head .dv-worlds a{min-height:33px;color:#514c45;font:500 .77rem/1.3 var(--v-sans)}
+.journal-v4 .dv-head .dv-worlds a.dv-active{color:#252019}
+.journal-v4 .dv-worlds a.dv-active::after{background:#94703c}
+.journal-v4 .dv-core{min-height:76px}
+.journal-v4 .dv-logo{gap:.78rem}
+.journal-v4 .dv-logo img{width:37px;height:42px;mix-blend-mode:multiply}
+.journal-v4 .dv-logo strong{font:400 clamp(1.9rem,2.3vw,2.55rem)/.92 var(--v-ser);letter-spacing:-.025em}
+.journal-v4 .dv-logo small{font:550 .69rem/1.17 var(--v-sans);letter-spacing:.05em;text-transform:none;color:#5a5144}
+.journal-v4 .dv-head .dv-links{font-size:.91rem;gap:clamp(1rem,1.9vw,2.1rem)}
+.journal-v4 .dv-links .dv-contact,.journal-v4 .dv-menu{border:1px solid #9c9180;border-radius:99px;min-height:42px;padding:.55rem 1.15rem}
+.journal-v4 .dv-links .dv-contact:hover,.journal-v4 .dv-menu:hover{background:#e9e1d4;color:var(--v-ink)}
+.journal-v4 .dv-links a[aria-current=page]{text-decoration-color:#876532}
+.journal-v4 :where(a,button,input,select,textarea,summary):focus-visible{outline:3px solid #9a6b20;outline-offset:4px}
+.journal-v4 .crumbs{font:450 .8rem/1.55 var(--v-sans);color:#514a40;letter-spacing:.01em}
+.journal-v4 :is(.page-intro,.crumbbar+.page-intro,.legal-intro){background:var(--v-paper);border-bottom-color:var(--v-rule)}
+.journal-v4 :is(.page-intro .wrap,.legal-intro .inner){padding-block:clamp(2.5rem,6vw,6rem)}
+.journal-v4 :is(.page-intro,.legal-intro) h1{font:400 clamp(3.6rem,7.7vw,7.2rem)/.98 var(--v-ser);letter-spacing:-.042em;max-width:22ch}
+.journal-v4 :is(.page-intro,.legal-intro) .lead,.journal-v4 .legal-intro .inner>p:last-child{color:var(--v-stone);font:400 clamp(1rem,1.5vw,1.24rem)/1.54 var(--v-sans)}
+.journal-v4 .page-intro.atelier-intro :is(.lead,h1){color:inherit}
+.journal-v4 :is(.editorial,.legal-content){line-height:1.65;font-size:clamp(1rem,1.12vw,1.14rem)}
+.journal-v4 :is(.editorial,.legal-content) h2{font-family:var(--v-ser);letter-spacing:-.025em;line-height:1.1}
+.journal-v4 .section h2,.journal-v4 .band h2{letter-spacing:-.03em}
+.journal-v4 .eyebrow,.journal-v4 .eyeline,.journal-v4 .foot-heading{font-family:var(--v-sans);font-size:.77rem;letter-spacing:.13em}
+.journal-v4 .section .card{border:1px solid var(--v-rule);border-radius:24px;background:var(--v-white);color:var(--v-ink)}
+.journal-v4 .card:hover{border-color:#a39178}
+.journal-v4 .section .photo{border-radius:24px;overflow:hidden}
+.journal-v4 :is(.section,.band,.page-intro) a.button{border-radius:9999px;padding:.8rem 1.4rem;min-height:46px;font:600 .95rem/1.35 var(--v-sans)}
+.journal-v4 :is(.section,.band,.page-intro) a.button:not(.ghost){background:var(--v-ink);border-color:var(--v-ink);color:var(--v-white)}
+.journal-v4 :is(.section,.band,.page-intro) a.button:not(.ghost):hover{background:var(--v-stone);border-color:var(--v-stone)}
+.journal-v4 .dv-atlas-call{width:min(90%,87rem);border-color:#cec4b4;padding-block:clamp(1.5rem,4.5vw,4.2rem)}
+.journal-v4 .dv-atlas-call h2{font-family:var(--v-ser);font-weight:400;letter-spacing:-.025em}
+.journal-v4 .dv-atlas-call a{border:1px solid #978a77;text-decoration:none;border-radius:99px;padding:.85rem 1.2rem}
+.journal-v4 :is(.site-footer,.journal-footer){background:#1c1b1a;color:#f7f1e8}
+.journal-v4 .site-footer .foot-inner{padding:clamp(2.45rem,5.5vw,5.1rem) 0 1.65rem}
+.journal-v4 .foot-brand,.journal-v4 footer a.foot-title{display:inline-flex;align-items:center;gap:.65rem;color:#f7f1e8;font:400 clamp(2.2rem,3.35vw,3.75rem)/1.05 var(--v-ser);letter-spacing:-.025em}
+.journal-v4 .foot-brand img,.journal-v4 footer a.foot-title img{width:31px;height:36px;object-fit:contain}
+.journal-v4 .site-footer .foot-title{color:#ded8ce}
+.journal-v4 .foot-heading{color:#e7cf99}
+.journal-v4 .foot-links a,.journal-v4 .foot-base a{color:inherit;font-family:var(--v-sans);font-size:.9rem}
+.journal-v4 .foot-links a{padding-block:.18rem}
+.journal-v4 .foot-base{border-color:#5a564f}
+.journal-v4 .foot-base small{color:#dbd5cc}
+@media(max-width:980px){
+  .journal-v4 .dv-core{min-height:66px}
+  .journal-v4 .dv-head .dv-links{gap:0 1rem}
+  .journal-v4 .dv-head .dv-links .dv-contact{padding:0;border:0;min-height:44px}
+}
+@media(max-width:580px){
+  .journal-v4 .dv-head .dv-worlds a{font-size:.77rem;min-height:32px}
+  .journal-v4 .dv-core{min-height:65px}
+  .journal-v4 .dv-logo img{width:29px;height:36px}
+  .journal-v4 .dv-logo strong{font-size:1.88rem}
+  .journal-v4 .dv-logo small{font-size:.64rem}
+  .journal-v4 .dv-menu{font-size:.86rem}
+}
+@media print{.journal-v4 .dv-head{display:none}}

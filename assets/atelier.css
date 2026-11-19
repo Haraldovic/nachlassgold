@@ -1,0 +1,17 @@
+.ng-paths{background:#f6f2e8;color:#222c24}
+.ng-paths-inner{width:var(--width);margin:0 auto;padding:clamp(3.7rem,7.25vw,8rem) 0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2rem,7vw,7.5rem);align-items:center}
+.ng-paths-plate{overflow:hidden;position:relative;background:#2c3024;height:clamp(21rem,40vw,40rem)}
+.ng-paths-plate img{height:100%;width:100%;object-fit:cover;object-position:63% 60%}
+.ng-paths-index h2{font-size:clamp(2.5rem,4.15vw,4.55rem);line-height:1.04;margin:.28em 0 .5em;max-width:14ch}
+.ng-paths-index h2 em{color:#6c643d;font-weight:400}
+.ng-paths-index nav{display:grid;border-top:1px solid #b4b39e}
+.ng-paths-index nav a{position:relative;display:grid;gap:.23rem;padding:1.05rem 2.1rem 1.05rem 0;border-bottom:1px solid #b4b39e;text-decoration:none}
+.ng-paths-index nav span{font:normal clamp(1.3rem,2.2vw,2rem) / 1.15 var(--serif);letter-spacing:-.035em}
+.ng-paths-index nav small{color:#52594d;font-size:.92rem;max-width:50ch}
+.ng-paths-index a:after{content:"";position:absolute;right:.4rem;top:calc(50% - .24rem);width:.48rem;height:.48rem;border-top:1px solid #6c694d;border-right:1px solid #6c694d;transform:rotate(45deg)}
+.ng-paths-index a:hover span,.ng-paths-index a:focus-visible span{text-decoration:underline;text-underline-offset:.18em;text-decoration-thickness:1px}
+@media(max-width:720px){
+ .ng-paths-inner{display:flex;flex-direction:column-reverse;align-items:stretch;gap:1.55rem}
+ .ng-paths-plate{height:auto;aspect-ratio:1.9}
+ .ng-paths-plate img{position:absolute;inset:0}
+}

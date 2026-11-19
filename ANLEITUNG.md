@@ -2,6 +2,10 @@
 
 Entpacke das ZIP und öffne `index.html` für einen ersten Rundgang. Kursübersicht und Ankaufsrechner bringen einen datierten Satz Referenzpreise vom 19. November 2026 mit. Die Aktualisierung startet beim Betrieb über den mitgelieferten GitHub-Actions-Workflow.
 
+## Gestaltung und Bedienung
+
+Vom Diamanten auf der Startseite gelangst du zum Ankaufsrechner, zur Verkaufsanfrage und zu den Ankaufswegen. Die Wägeprobe lässt sich im Werkstattbereich mit verschiedenen Goldproben bedienen. Bei aktivierter Bewegungsreduktion startet die Schliffstudie mit einem Standbild.
+
 ## Vorschau auf GitHub Pages
 
 1. Übernimm den gesamten entpackten Inhalt in das vorgesehene Repository. `index.html` und der Ordner `.github` müssen auf derselben obersten Ebene liegen. Bei ausgeblendeten Punktdateien hilft GitHub Desktop. Prüfe anschließend im Repository, ob die Workflow-Datei unter `.github/workflows/` sichtbar ist.
@@ -20,3 +24,7 @@ Entpacke das ZIP und öffne `index.html` für einen ersten Rundgang. Kursübersi
 Kläre mit Dietmar, wer die Website betreibt. Prüft vor der Veröffentlichung die Anbieterangaben, den Datenschutz, die Bildrechte, die Versandunterlagen und die Ankaufsbedingungen. Die bisherige Nachlassgold-Domain ist in Betrieb. Verwende für die Präsentation eine Vorschauadresse. Für den geschäftlichen Dauerbetrieb ist ein dafür vorgesehener Hoster nötig. [GitHub-Pages-Nutzungsgrenzen](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits)
 
 Details zu Kursquellen, Zeitplan und Verhalten bei Ausfällen stehen in [KURSE.md](KURSE.md).
+
+**Upload prüfen:** Die neue `index.html` und der Ordner `assets/` gehören auf dieselbe Ebene. Im Gesamtpaket gehören alle drei Markenordner neben die oberste `index.html`. Bei bestehenden Repositories die gleichnamigen Dateien ersetzen und vorhandene Domain-Einstellungen beibehalten.
+
+Die Gestaltungsregeln stehen in [DESIGN.md](DESIGN.md). Beim Upload den Ordner `assets/fonts/` mitübernehmen.

@@ -1,0 +1,319 @@
+/* Nachlassgold. The diamond renderer uses the same edge colour as its surround. */
+body.nachlass {
+  --ng5-night: #0a0c10;
+  --ng5-surface: #101419;
+  --ng5-raised: #171d23;
+  --ng5-text: #f7f4ed;
+  --ng5-copy: #c8c9c8;
+  --ng5-silver: #dce2e5;
+  --ng5-muted: #a7adb1;
+  --ng5-line: #373e44;
+  --ng5-gold: #f5d78e;
+  --ng5-brass: #b8860b;
+  --ng5-deep-gold: #8c6a1e;
+  --ng4-paper: var(--ng5-night);
+  --ng4-ink: var(--ng5-text);
+  --ng4-stone: var(--ng5-copy);
+  --ng4-forest: var(--ng5-gold);
+  --ng4-line: var(--ng5-line);
+  --ng4-white: var(--ng5-surface);
+  --ng4-radius: 3px;
+  --serif: var(--v-ser, "Cormorant Garamond", Georgia, serif);
+  --sans: var(--v-sans, "DM Sans", Arial, sans-serif);
+  --ink: var(--ng5-text);
+  --paper: var(--ng5-night);
+  --panel: var(--ng5-surface);
+  --hair: var(--ng5-line);
+  --link: var(--ng5-gold);
+  --muted: var(--ng5-copy);
+  color-scheme: dark;
+  color: var(--ng5-text);
+  background: var(--ng5-night);
+}
+.nachlass .ng5-cover { background: #0a0c10; }
+.nachlass .ng5-cover-inner {
+  width: min(92.5%, 98rem);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, .84fr) minmax(0, 1.16fr);
+  align-items: center;
+  gap: clamp(1rem, 2.3vw, 3.4rem);
+  padding-block: clamp(1.8rem, 4vw, 5rem) clamp(2.5rem, 5vw, 6rem);
+}
+.nachlass .ng5-intro {
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+  padding-inline-start: clamp(.3rem, 1.9vw, 2.8rem);
+}
+.nachlass .ng5-overline {
+  display: flex;
+  align-items: center;
+  gap: .82rem;
+  margin: 0;
+  color: #d7b76f;
+  font: 550 .72rem/1.35 var(--sans);
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+.nachlass .ng5-overline::before { content: ""; width: 2.7rem; height: 1px; background: #9b7e43; }
+.nachlass .ng5-intro h1 {
+  margin: clamp(.92rem, 1.65vw, 1.8rem) 0 0;
+  color: var(--ng5-text);
+  font: 400 clamp(4.35rem, 8.15vw, 8.7rem)/.87 var(--serif);
+  letter-spacing: -.055em;
+  text-wrap: initial;
+}
+.nachlass .ng5-intro h1 em { color: var(--ng5-gold); font-weight: 400; }
+.nachlass .ng5-deck {
+  margin: clamp(1.45rem, 2.55vw, 2.5rem) 0 0;
+  max-width: 36ch;
+  color: var(--ng5-copy);
+  font: 400 clamp(1rem, 1.3vw, 1.24rem)/1.57 var(--sans);
+}
+.nachlass .ng5-actions { display:flex; flex-wrap:wrap; align-items:center; gap:.55rem 1.55rem; margin-top:clamp(1.3rem,2.2vw,2.1rem); }
+.nachlass .ng5-actions a { font-family: var(--sans); }
+.nachlass .ng5-sell,
+.nachlass main :is(.page-intro,.section,.band) a.button:not(.ghost),
+.nachlass main .inquiry-form .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: .78rem 1.35rem;
+  border: 1px solid #cfad62;
+  border-radius: 2px;
+  background: linear-gradient(112deg, #f5d78e, #e0bd78);
+  color: #211c12;
+  font: 650 .94rem/1.28 var(--sans);
+  text-decoration: none;
+}
+.nachlass .ng5-sell:hover,
+.nachlass main :is(.page-intro,.section,.band) a.button:not(.ghost):hover,
+.nachlass main .inquiry-form .button:hover { background: #fae2ae; color:#16140e; border-color:#fae2ae; }
+.nachlass .ng5-calc {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding-block: .6rem;
+  color: var(--ng5-silver);
+  font: 550 .96rem/1.3 var(--sans);
+  text-decoration: underline;
+  text-decoration-color: #888780;
+  text-underline-offset: .33em;
+}
+.nachlass .ng5-calc:hover { color:#fff1c9; text-decoration-color:currentColor; }
+.nachlass .ng5-cover .jewel-stage {
+  position: relative;
+  min-width: 0;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  justify-self: center;
+  border: 0;
+  border-radius: 0;
+  background: #0a0c10;
+  box-shadow: none;
+}
+.nachlass .ng5-cover .jewel-stage :is(img,canvas) { display:block; width:100%; height:100%; object-fit:contain; }
+.nachlass .ng5-cover .jewel-stage [hidden] { display:none!important; }
+
+/* From the current quote to delivery, with a working balance below the routes. */
+body.nachlass main > [data-rate-ticker] {
+  --ng-ink: var(--ng5-text);
+  --ng-muted: var(--ng5-muted);
+  background: #11151a;
+  color: var(--ng5-text);
+  border-block: 1px solid #3b3830;
+  padding: 1rem max(5.25%, calc((100% - 91rem) / 2));
+}
+.nachlass .ng-ticker-label,.nachlass .ng-ticker-date { color: #c2c5c4; }
+.nachlass .ng-ticker-value { color: #f0d6a2; font-family: var(--serif); }
+.nachlass .ng-ticker-link { color: #ece4d2; }
+.nachlass .ng-paths { background:var(--ng5-night); color:var(--ng5-text); }
+.nachlass .ng-paths-index h2,.nachlass .ng-paths-index nav span { color:var(--ng5-text); }
+.nachlass .ng-paths-index h2 em {color:var(--ng5-gold);}
+.nachlass .ng-paths-plate,
+.nachlass main .section .photo,
+.nachlass main .section .photo img,
+.nachlass main .section .photo.portrait {border-radius:3px;}
+.nachlass .ng-paths-index nav,.nachlass .ng-paths-index nav a {border-color:var(--ng5-line);}
+.nachlass .ng-paths-index nav small {color:var(--ng5-copy);}
+.nachlass .ng-paths-index a::after {border-color:#c8ad70;}
+.nachlass .ng-paths-index nav a:hover span {color:var(--ng5-gold);}
+.nachlass .ng5-balance {
+  background: #11151b;
+  color:var(--ng5-text);
+  border-block:1px solid #373a3b;
+}
+.nachlass .ng5-balance .ngw-grid {
+  width: min(88.5%, 87rem);
+  grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr);
+  gap:clamp(2rem,6.5vw,8rem);
+  padding-block:clamp(2.2rem,3.9vw,4.8rem);
+}
+.nachlass .ng5-balance .ngw-copy {padding:0;}
+.nachlass .ng5-balance .ngw-copy h2 {
+  color:var(--ng5-text);
+  font:400 clamp(2.8rem,5.1vw,5.5rem)/.98 var(--serif);
+  letter-spacing:-.045em;
+  margin:.32em 0 .4em;
+}
+.nachlass .ng5-balance .ngw-copy h2+p {max-width:38ch; color:var(--ng5-copy); line-height:1.58;}
+.nachlass .ng5-balance .ngw-copy .ng5-calc {margin-top:.75rem;}
+.nachlass .ng5-balance .ngw-figure {
+  margin:0;
+  border:1px solid #353c44;
+  border-radius:2px;
+  color:var(--ng5-silver);
+  background:#141b22;
+}
+.nachlass .ng5-balance .ngw-figure::before {
+  background:radial-gradient(ellipse at 50% 40%,#29323c 0,#171e26 62%,#141a21 100%);
+}
+.nachlass .ng5-balance .ngw-console {border-color:#4a4d4b;}
+.nachlass .ng5-balance .ngw-readout > span {color:#b9bdbe;}
+.nachlass .ng5-balance .ngw-readout strong {color:#f1e1ba;}
+.nachlass .ng5-balance .ngw-masses,.nachlass .ng5-balance .ngw-motion {border-color:#777363;}
+.nachlass .ng5-balance .ngw-masses button[aria-pressed="true"] {
+  color:#1c1912;
+  background:#e7cf9a;
+  border-color:#e7cf9a;
+}
+
+/* Shared reading surfaces, photographic intros and long-form information. */
+.nachlass main,
+.nachlass main .crumbbar,
+.nachlass main .page-intro,
+.nachlass main .folio-intro,
+.nachlass main .page-intro.atelier-intro {
+  color:var(--ng5-text); background:var(--ng5-night); border-color:var(--ng5-line);
+}
+.nachlass main .page-intro .lead,.nachlass main .page-intro.atelier-intro .lead {color:var(--ng5-copy);}
+.nachlass main .eyebrow,
+.nachlass main .page-intro.atelier-intro .eyebrow,
+.nachlass main .section .eyebrow {color:#d6bd86;}
+.nachlass main .page-intro .textlink,.nachlass main .textlink {color:#e4cd99;}
+.nachlass main .atelier-intro-img {border-radius:3px;}
+.nachlass main .crumbs {color:#b4b8bb;}
+.nachlass main .band {color:var(--ng5-text); background:var(--ng5-surface); border-color:var(--ng5-line);}
+.nachlass main .section p {color:var(--ng5-copy);}
+.nachlass main .section h2,.nachlass main .section h3 {color:var(--ng5-text);}
+.nachlass main .section .card {color:var(--ng5-text);background:var(--ng5-raised);border:1px solid var(--ng5-line);border-radius:3px;}
+.nachlass main .section .card:hover {border-color:#7e7157;}
+.nachlass main .section .photo:has(img[src*="dietmar-im-anzug"]) {background:radial-gradient(ellipse at 46% 38%,#77756c,#4a4e4e 53%,#292e34);}
+.nachlass main .section table :is(th,td) {border-color:var(--ng5-line);color:var(--ng5-text);}
+.nachlass main .section .note,.nachlass main .section figcaption {color:var(--ng5-muted);}
+.nachlass .steps li,.nachlass .faq,.nachlass .faq:first-child {border-color:var(--ng5-line);}
+.nachlass .steps li::before,.nachlass .faq summary::after {color:#d0b779;}
+.nachlass main .editorial address {color:var(--ng5-silver);}
+.nachlass main .editorial :is(p,li,address) a {color:#ebd49e;}
+.nachlass main .dv-atlas-call {border-color:#45433c;}
+.nachlass main .dv-atlas-call a {color:var(--ng5-gold);border-color:#867349;background:transparent;border-radius:2px;}
+.nachlass main .dv-atlas-call a:hover {background:#28251c;}
+
+/* Actual price data, alloy controls and quotation remain independent of the stage. */
+.nachlass main :is(.ng-calc,.ng-market) {
+  --ng-ink:var(--ng5-text);
+  --ng-muted:var(--ng5-copy);
+  --ng-line:var(--ng5-line);
+  --ng-paper:var(--ng5-surface);
+  --ng-panel:var(--ng5-raised);
+  --ng-gold:var(--ng5-gold);
+}
+.nachlass .ng-calc .ng-calc-main,
+.nachlass .ng-market .ng-metal-detail {
+  color:var(--ng5-text); background:var(--ng5-surface); border-color:var(--ng5-line); border-radius:3px;
+}
+.nachlass .ng-calc .ng-calc-result {
+  background:linear-gradient(135deg,#23211c,#191c20 70%); color:var(--ng5-text); border:1px solid #5b5039; border-radius:3px;
+}
+.nachlass .ng-calc-result .ng-result-total {color:var(--ng5-gold);}
+.nachlass .ng-calc-result .ng-breakdown>div {border-color:#4b4841;}
+.nachlass .ng-market .ng-element-symbol {background:#2b2822; border-color:#63583e; color:#edcf8d; border-radius:2px;}
+.nachlass .ng-market-table thead th,.nachlass .ng-market .ng-source-status {color:var(--ng5-muted);}
+.nachlass .ng-market .ng-market-table td:last-child {color:var(--ng5-gold);}
+.nachlass .ng-market-tabs > button,.nachlass .ng-add,.nachlass .ng-calc-result .ng-copy {
+  background:transparent; color:#e1e0d8; border-color:#737169; border-radius:2px;
+}
+.nachlass .ng-market-tabs > button[aria-pressed="true"],
+.nachlass .ng-market-tabs > button:hover,.nachlass .ng-add:hover {
+  background:var(--ng5-gold); color:#1d1b15; border-color:var(--ng5-gold);
+}
+.nachlass .ng-calc-result .ng-copy:hover {color:white;background:#393830;}
+.nachlass .ng-rate-action,.nachlass .ng-calc-result .ng-rate-action {color:var(--ng5-gold);}
+.nachlass .ng-calc .ng-remove {color:var(--ng5-copy);}
+.nachlass .ng-calc .ng-purity { color:var(--ng5-copy); --purity-line:#41454a; }
+.nachlass .ng-calc .ng-purity .ng-purity-description,
+.nachlass .ng-calc .ng-purity .ng-purity-key,
+.nachlass .ng-calc .ng-purity .ng-purity-key strong {color:var(--ng5-copy);}
+.nachlass .ng-purity .ng-purity-track progress {background:#3c4245;}
+.nachlass .ng-calc-result :is(.ng-attribution,.ng-result-foot,.ng-result-status,.ng-copy-message),
+.nachlass .section .ng-calc-result p {color:#d1d1c9;}
+.nachlass .ng-calc-result .ng-attribution a {color:#ebd49e;}
+
+.nachlass main .contact-compose {
+  background:var(--ng5-surface); color:var(--ng5-text); border:1px solid var(--ng5-line); border-radius:3px;
+}
+.nachlass .inquiry-form label,.nachlass .faq-search label,.nachlass .ng-field {color:var(--ng5-text);}
+.nachlass .inquiry-form :is(select,input,textarea),
+.nachlass .faq-search input,
+.nachlass .ng-field :is(select,input),
+.nachlass .ng-calc-result textarea[data-copy-fallback] {
+  color:#f0eee9; background:#151b22; border:1px solid #68717a; border-radius:3px; caret-color:#f7dca1;
+}
+.nachlass .inquiry-form :is(select,input,textarea)::placeholder,
+.nachlass .faq-search input::placeholder,.nachlass .ng-field input::placeholder {color:#aab2b7; opacity:1;}
+.nachlass .ng-field input[aria-invalid="true"] {border-color:#e29886;}
+.nachlass .contact-compose .inquiry-form .note {color:#d6d9d7;}
+.nachlass main :is(a,button,input,select,textarea,summary):focus-visible,
+.nachlass main :is(.ng-calc,.ng-market,.inquiry-form,.faq-search) :is(input,select,textarea,button):focus-visible {
+  outline: 2px solid #ffe09b; outline-offset: 4px;
+}
+
+@media (min-width:1500px) {
+  .nachlass .ng5-cover-inner {gap:3.2rem;}
+}
+@media (max-width:920px) and (min-width:681px) {
+  .nachlass .ng5-cover-inner {width:92%; gap:1rem; grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);}
+  .nachlass .ng5-intro {padding-inline-start:0;}
+  .nachlass .ng5-intro h1 {font-size:clamp(4rem,8.8vw,5.25rem);}
+}
+@media (max-width:720px) {
+  .nachlass .ng5-balance .ngw-grid { display:grid; grid-template-columns:1fr; width:90%; gap:1.25rem; padding-block:2.2rem; }
+  .nachlass .ng5-balance .ngw-copy .ng5-calc {margin-top:.25rem;}
+  .nachlass .ng5-balance .ngw-copy h2 {font-size:2.9rem;}
+}
+@media (max-width:680px) {
+  .nachlass .ng5-cover-inner {
+    grid-template-columns:minmax(0,1fr);
+    gap:0;
+    width:89.5%;
+    padding-block:clamp(1.7rem,6vw,2.8rem) 1.35rem;
+  }
+  .nachlass .ng5-intro {padding:0;}
+  .nachlass .ng5-overline {font-size:.7rem; letter-spacing:.145em;}
+  .nachlass .ng5-overline::before {width:1.85rem;}
+  .nachlass .ng5-intro h1 {margin-top:.78rem; font-size:clamp(3.3rem,11vw,5rem); line-height:.97;}
+  .nachlass .ng5-intro h1 br {display:none;}
+  .nachlass .ng5-deck {margin-top:.9rem; max-width:40ch; font-size:1rem; line-height:1.46;}
+  .nachlass .ng5-actions {margin-top:.92rem; gap:.18rem .85rem;}
+  .nachlass .ng5-actions a {font-size:.87rem;}
+  .nachlass .ng5-sell {padding-inline:.9rem;}
+  .nachlass .ng5-cover .jewel-stage { width:min(100%,31rem); margin-top:.2rem; }
+  .nachlass main .ng-market-lead {flex-wrap:wrap;gap:.6rem .85rem;}
+  .nachlass main .ng-source-status {flex-basis:100%;margin-left:0;}
+}
+@media (max-width:370px) {
+  .nachlass .ng5-cover-inner {width:91%;}
+  .nachlass .ng5-actions a {font-size:.82rem;}
+  .nachlass .ng5-intro h1 {font-size:3.1rem;}
+}
+@media (forced-colors:active) {
+  .nachlass .ng5-sell,.nachlass .ng5-balance .ngw-figure {border-color:CanvasText;}
+  .nachlass .ng-market-tabs button[aria-pressed="true"] {border:2px solid Highlight;}
+}
+@media print {
+  body.nachlass, .nachlass main,.nachlass main .section,.nachlass main .page-intro {background:white;color:black;}
+  .nachlass main .section :is(h2,h3,p,li,address,a),.nachlass main .page-intro :is(h1,p){color:black;}
+}
