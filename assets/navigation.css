@@ -47,7 +47,7 @@ header.dv-head[data-dv-header] .dv-links > a {
 header.dv-head[data-dv-header] .dv-links > .dv-contact,
 header.dv-head[data-dv-header] .dv-menu {
   border: 1px solid var(--nav-line);
-  border-radius: .55rem;
+  border-radius: 0;
   padding: .55rem 1rem;
   color: var(--nav-ink);
   background: var(--nav-wash);
@@ -58,88 +58,46 @@ header.dv-head[data-dv-header] .dv-menu {
   min-height: 2.75rem;
   font: 600 .875rem/1 var(--v-sans);
 }
-header[data-dv-header] .dv-family {
-  position: relative;
-  display: block;
-  background: transparent;
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-header[data-dv-header] .dv-family summary {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 2.75rem;
-  margin: 0;
-  padding: .45rem 0 .45rem .2rem;
-  gap: .55rem;
-  list-style: none;
-  font: 550 .92rem/1.35 var(--v-sans);
-  color: var(--nav-ink);
-  cursor: pointer;
-  touch-action: manipulation;
-}
-header[data-dv-header] .dv-family summary::-webkit-details-marker {display: none;}
-header[data-dv-header] .dv-family summary::after {
-  content: "";
-  display: block;
-  box-sizing: border-box;
-  flex: none;
-  width: .46rem;
-  height: .46rem;
-  margin: -.2rem .18rem 0 0;
-  border: solid currentColor;
-  border-width: 0 1.5px 1.5px 0;
-  transform: rotate(45deg);
-}
-header[data-dv-header] .dv-family[open] summary::after {transform: rotate(225deg); margin-top: .23rem;}
-header[data-dv-header] .dv-family-panel {
-  position: absolute;
-  inset: calc(100% + .35rem) 0 auto auto;
-  width: 17rem;
-  padding: .45rem;
-  border: 1px solid var(--nav-line);
-  border-radius: .9rem;
-  background: var(--nav-surface);
-  box-shadow: 0 .85rem 2rem rgb(20 38 34 / 12%);
-}
-header[data-dv-header] .dv-family-title {
-  display: block;
-  padding: .6rem .75rem .65rem;
-  color: var(--nav-muted);
-  font: 500 .8rem/1.4 var(--v-sans);
+header[data-dv-header] .dv-brandbar {
+  background: var(--nav-wash);
+  border-bottom: 1px solid var(--nav-line);
 }
 header.dv-head[data-dv-header] .dv-worlds {
   display: grid;
-  grid-template-columns: minmax(0, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  width: min(91%, 86rem);
+  margin-inline: auto;
+  gap: 0;
   align-items: stretch;
-  justify-content: stretch;
-  width: 100%;
-  gap: .125rem;
 }
 header.dv-head[data-dv-header] .dv-worlds a {
   display: grid;
   align-content: center;
-  justify-content: start;
-  gap: .12rem;
-  width: 100%;
-  min-height: 3.3rem;
-  white-space: normal;
-  padding: .48rem .75rem;
-  border-radius: .5rem;
+  justify-items: center;
+  gap: .2rem;
+  min-width: 0;
+  min-height: 3.6rem;
+  padding: .55rem .4rem;
   color: var(--nav-ink);
-  font: 620 .94rem/1.25 var(--v-sans);
+  font: 500 1rem/1.25 var(--v-sans);
+  text-align: center;
   text-decoration: none;
+  border-bottom: 2px solid transparent;
 }
 header[data-dv-header] .dv-worlds small {
   color: var(--nav-muted);
-  font: 440 .82rem/1.3 var(--v-sans);
+  font: 400 .8rem/1.25 var(--v-sans);
 }
-header.dv-head[data-dv-header] .dv-worlds a:hover,
-header.dv-head[data-dv-header] .dv-worlds a[aria-current] {background: var(--nav-wash);}
-header.dv-head[data-dv-header] .dv-worlds .dv-active::after {content: none;}
-header.dv-head[data-dv-header] :is(a,button,summary):focus-visible {
+header.dv-head[data-dv-header] .dv-worlds a:hover {
+  background: var(--nav-surface);
+  border-bottom-color: var(--nav-line);
+}
+header.dv-head[data-dv-header] .dv-worlds a[aria-current] {
+  font-weight: 700;
+  border-bottom-color: var(--nav-ink);
+}
+header.dv-head[data-dv-header] .dv-worlds .dv-active::after { content: none; }
+header.dv-head[data-dv-header] :is(a,button):focus-visible {
   outline: 2px solid var(--nav-ink);
   outline-offset: 2px;
 }
@@ -165,30 +123,34 @@ header.dv-head[data-dv-header] :is(a,button,summary):focus-visible {
   }
   header.dv-head.dv-js[data-dv-header] .dv-links:not(.dv-open) {display: none;}
   header.dv-head[data-dv-header] .dv-links > a,
-  header.dv-head[data-dv-header] .dv-links > .dv-contact,
-  header.dv-head[data-dv-header] .dv-family summary {
+  header.dv-head[data-dv-header] .dv-links > .dv-contact {
     width: 100%;
     min-height: 2.9rem;
     padding: .68rem .5rem;
     margin: 0;
     white-space: normal;
     border: 0;
-    border-radius: .4rem;
+    border-radius: 0;
     background: transparent;
     font: 550 1rem/1.4 var(--v-sans);
   }
-  header.dv-head[data-dv-header] .dv-links > a:hover,
-  header.dv-head[data-dv-header] .dv-family summary:hover {background: var(--nav-wash);}
-  header[data-dv-header] .dv-family-panel {
-    position: static;
-    width: 100%;
-    margin: .25rem 0 .15rem;
-    box-shadow: none;
-  }
+  header.dv-head[data-dv-header] .dv-links > a:hover:hover {background: var(--nav-wash);}
 }
 @media (max-width: 24rem) {
   header[data-dv-header] .dv-core.dv-inner {width: 92%; column-gap: .45rem;}
   header[data-dv-header] .dv-logo {gap: .4rem;}
   header[data-dv-header] .dv-logo strong {font-size: 1.57rem;}
   header.dv-head[data-dv-header] .dv-menu {padding-inline: .65rem;}
+}
+
+@media (max-width: 40rem) {
+  header.dv-head[data-dv-header] .dv-worlds { width: 100%; grid-template-columns: 1fr .94fr 1.19fr; }
+  header.dv-head[data-dv-header] .dv-worlds a {
+    min-height: 3rem;
+    padding: .6rem .1rem;
+    font-size: .875rem;
+    letter-spacing: -.025em;
+    white-space: nowrap;
+  }
+  header[data-dv-header] .dv-worlds small { display: none; }
 }

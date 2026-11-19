@@ -3,13 +3,13 @@ body.nachlass main>[data-rate-ticker] { background:#e8ece3; color:#203949; borde
 .nachlass .ng-ticker-value,.nachlass .ng-ticker-link {color:#203e4d;}
 .nachlass :is(.ng-paths,.ng5-balance,main,.crumbbar) { color:var(--ink); background:var(--paper); }
 .nachlass .ng-paths-inner,.nachlass .ng5-balance .ngw-grid { width:min(88%,82rem); }
-.nachlass .ng-paths-plate,.nachlass main .section .photo,.nachlass main .section .photo img,.nachlass main .atelier-intro-img { border-radius:0; }
+.nachlass .ng-paths-plate,.nachlass main .section .photo,.nachlass main .section .photo img,.nachlass main .atelier-intro-img { border-radius: 0; }
 .nachlass .ng5-balance { border-block:1px solid var(--ng4-line); background:#f0f0e9; }
 .nachlass .ng5-balance .ngw-copy { padding:0; }
 .nachlass .ng5-balance h2 { font:400 clamp(3rem,5.05vw,5.3rem)/1.02 var(--serif); letter-spacing:-.04em; margin:.24em 0; color:var(--ink); }
 .nachlass .ng5-balance .ngw-copy h2+p { color:var(--muted); max-width:40ch; line-height:1.6; }
 .nachlass .ng5-balance .ngw-copy .ng6-link { margin-top:.6rem; }
-.nachlass .ng5-balance .ngw-figure { background:#faf9f3; color:var(--ink); border:1px solid #cbc7b5; border-radius:0; }
+.nachlass .ng5-balance .ngw-figure { background:#faf9f3; color:var(--ink); border:1px solid #cbc7b5; border-radius: 0; }
 .nachlass .ng5-balance .ngw-figure::before { background:none; }
 .nachlass .ng5-balance .ngw-console,.nachlass .ng5-balance .ngw-masses,.nachlass .ng5-balance .ngw-motion {border-color:#ada792;}
 .nachlass .ng5-balance .ngw-readout :is(span,strong,i),.nachlass .ng5-balance .ngw-masses button,.nachlass .ng5-balance .ngw-motion { color:var(--ink); }
@@ -20,19 +20,19 @@ body.nachlass main>[data-rate-ticker] { background:#e8ece3; color:#203949; borde
 .nachlass main .page-intro h1,.nachlass main .page-intro.atelier-intro h1 { color:var(--ink); }
 .nachlass main .page-intro .lead,.nachlass main .page-intro.atelier-intro .lead,.nachlass main .section p { color:var(--muted); }
 .nachlass main :is(.eyebrow,.crumbs,.textlink),.nachlass main .section p.eyebrow { color:#625234; }
-.nachlass main .section .card { border:1px solid var(--hair); border-radius:0; background:#fffef9; color:var(--ink); }
+.nachlass main .section .card { border:1px solid var(--hair); border-radius: 0; background:#fffef9; color:var(--ink); }
 .nachlass main .section .photo.portrait { background:#e5e8df; }
 .nachlass main .band,.nachlass main .contact-compose { background:#f0f0e9; color:var(--ink); border-color:var(--hair); }
-.nachlass .ng-calc .ng-calc-main,.nachlass .ng-market .ng-metal-detail {color:var(--ink);background:#fffefb;border:1px solid var(--hair);border-radius:2px;}
-.nachlass .ng-calc .ng-calc-result { color:var(--ink); background:#e9eee6; border:1px solid #bcc8b8; border-radius:2px; }
+.nachlass .ng-calc .ng-calc-main,.nachlass .ng-market .ng-metal-detail {color:var(--ink);background:#fffefb;border:1px solid var(--hair);border-radius: 0;}
+.nachlass .ng-calc .ng-calc-result { color:var(--ink); background:#e9eee6; border:1px solid #bcc8b8; border-radius: 0; }
 .nachlass .ng-calc-result :is(h2,dt,dd,.ng-result-total),.nachlass .section .ng-calc-result p.ng-result-total { color:var(--ink); }
 .nachlass .ng-calc-result :is(p,.ng-copy-message,.ng-attribution,.ng-result-status,.ng-result-foot),.nachlass .section .ng-calc-result p { color:#455047; }
 .nachlass .ng-calc-result .ng-breakdown>div { border-color:#b6c3b1; }
 .nachlass .ng-calc-result .ng-copy,.nachlass .ng-calc-result .ng-rate-action { color:#203f48; border-color:#768a7c; }
 .nachlass .ng-calc-result .ng-copy:hover { background:#dae4d6; }
-.nachlass .ng-market .ng-element-symbol { background:#eeeee6; color:#69532d; border-color:#c7c4b5; border-radius:2px; }
-.nachlass .ng-field :is(input,select),.nachlass .faq-search input,.nachlass .inquiry-form :is(input,select,textarea),.nachlass .ng-calc-result [data-copy-fallback] { border-radius:2px; border:1px solid #a4a695; background:#fffefa; color:var(--ink); }
-.nachlass .ng-tab,.nachlass .ng-add,.nachlass .ng-copy {border-radius:2px;}
+.nachlass .ng-market .ng-element-symbol { background:#eeeee6; color:#69532d; border-color:#c7c4b5; border-radius: 0; }
+.nachlass .ng-field :is(input,select),.nachlass .faq-search input,.nachlass .inquiry-form :is(input,select,textarea),.nachlass .ng-calc-result [data-copy-fallback] { border-radius: 0; border:1px solid #a4a695; background:#fffefa; color:var(--ink); }
+.nachlass .ng-tab,.nachlass .ng-add,.nachlass .ng-copy {border-radius: 0;}
 .nachlass main :is(.ng-calc,.ng-market,.inquiry-form,.faq-search) :is(input,select,textarea,button,a):focus-visible,.nachlass main :focus-visible { outline:2px solid #775718; outline-offset:3px; }
 
 /* Materials and appointments share the same petrol and pearl surfaces. */
@@ -44,7 +44,7 @@ body.nachlass {
   --ng4-forest: #20534e;
   --ng4-sage: #e1eee9;
   --ng4-line: #d0dcd6;
-  --ng4-radius: 18px;
+  --ng4-radius: 0;
   --paper: var(--ng4-paper);
   --ink: var(--ng4-ink);
   --muted: var(--ng4-stone);
@@ -61,7 +61,7 @@ body.nachlass {
   margin: clamp(.85rem, 1.8vw, 1.9rem) auto;
   display: grid;
   grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
-  border-radius: clamp(15px, 1.6vw, 25px);
+  border-radius: 0;
   overflow: hidden;
   background: #dfebe5;
 }
@@ -99,7 +99,7 @@ body.nachlass {
 }
 .nachlass .valuation-primary {
   border: 1px solid #17483f;
-  border-radius: 999px;
+  border-radius: 0;
   background: #17483f;
   color: #fffefa;
   padding: .72rem 1.35rem;
@@ -113,16 +113,16 @@ body.nachlass main > [data-rate-ticker] {
   margin: 0 auto;
   padding: .82rem clamp(1rem, 2.7vw, 2.7rem);
   border: 1px solid #d3ddd5;
-  border-radius: 12px;
+  border-radius: 0;
   background: #eff3ed;
 }
 .nachlass .ng-ticker-value { font: 600 1.2rem/1.25 var(--sans); }
 .nachlass .ng-paths-plate, .nachlass main .section .photo, .nachlass main .section .photo img,
-.nachlass main .atelier-intro-img, .nachlass .ng5-balance .ngw-figure { border-radius: var(--ng4-radius); }
+.nachlass main .atelier-intro-img, .nachlass .ng5-balance .ngw-figure { border-radius: 0; }
 .nachlass .ng-paths-index nav { border: 0; gap: .6rem; }
 .nachlass .ng-paths-index nav a {
   border: 1px solid var(--ng4-line);
-  border-radius: 12px;
+  border-radius: 0;
   background: #fffffd;
   display: grid;
   padding: .95rem 2.8rem .95rem 1.15rem;
@@ -147,7 +147,7 @@ body.nachlass main > [data-rate-ticker] {
 .nachlass main .page-intro,
 .nachlass main .page-intro.atelier-intro {
   border: 0;
-  border-radius: var(--ng4-radius);
+  border-radius: 0;
   background: #e5efea;
   margin: .9rem auto 0;
   width: min(94%, 92rem);
@@ -177,31 +177,31 @@ body.nachlass main > [data-rate-ticker] {
 .nachlass main .page-intro a.button:not(.ghost), .nachlass main .section a.button:not(.ghost), .nachlass .inquiry-form .button {
   background: #194a42;
   border-color: #194a42;
-  border-radius: 999px;
+  border-radius: 0;
   color: #fff;
 }
 .nachlass main a.button::after, .nachlass main .textlink::after { content: none; }
 .nachlass main .section .card,.nachlass .ng-calc .ng-calc-main,.nachlass .ng-market .ng-metal-detail,.nachlass .ng-calc .ng-calc-result,
-.nachlass main .contact-compose { border-radius: var(--ng4-radius); }
+.nachlass main .contact-compose { border-radius: 0; }
 .nachlass .ng-calc .ng-calc-result { border-color: #c2d4c8; background: #e4efe8; }
-.nachlass main :is(.ng-tab, .ng-add, .ng-copy) { border-radius: 999px; }
-.nachlass main :is(.ng-field, .faq-search, .inquiry-form) :is(input,select,textarea) { border-radius: 8px; }
+.nachlass main :is(.ng-tab, .ng-add, .ng-copy) { border-radius: 0; }
+.nachlass main :is(.ng-field, .faq-search, .inquiry-form) :is(input,select,textarea) { border-radius: 0; }
 .nachlass main .section .card h3, .nachlass main .editorial h2 {
   font: 540 clamp(1.3rem, 2.2vw, 2.05rem)/1.18 var(--sans);
   letter-spacing: -.038em;
 }
 .nachlass .dv-atlas-call { 
   border: 0;
-  border-radius: var(--ng4-radius);
+  border-radius: 0;
   background: #e7efe9;
   margin-block: 1.2rem 3.5rem;
   padding: clamp(1.5rem,3.5vw,3.5rem);
 }
-.nachlass .dv-atlas-call a { border-radius: 999px; border-color: #90a695; }
+.nachlass .dv-atlas-call a { border-radius: 0; border-color: #90a695; }
 .nachlass main.ta-atlas { --ta-paper: #f8f9f5; --ta-ink: #173b37; --ta-text: #344f48; --ta-hair: #d4ded7; }
 .nachlass .ta-intro h1 { font: 470 clamp(2.8rem,6vw,5.5rem)/1.02 var(--sans); letter-spacing: -.06em; }
 @media (max-width: 779px) {
-  .valuation-hero { width: 92%; grid-template-columns: 1fr; border-radius: 16px; }
+  .valuation-hero { width: 92%; grid-template-columns: 1fr; border-radius: 0; }
   .valuation-intro { padding: clamp(1.4rem,5vw,2.5rem); }
   .valuation-intro h1 { font-size: clamp(3.2rem, 9.9vw, 5rem); margin: .12em 0 .28em; }
   .valuation-intro h1 em { display: inline; }
@@ -220,3 +220,5 @@ body.nachlass main > [data-rate-ticker] {
   .nachlass :is(.valuation-primary, .valuation-secondary) { font-size: .9rem; }
   .nachlass .valuation-primary { padding-inline: 1rem; }
 }
+
+.nachlass .ng5-balance :is(.ngw-masses, .ngw-masses button, .ngw-motion) { border-radius: 0; }
