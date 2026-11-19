@@ -145,10 +145,11 @@ def write_bundle(site_dir, today, key, fetch=fetch_json, published_base=None):
     confirmed_first = False
     if published_base:
         base = urlsplit(published_base)
-        if base.scheme != "https" or not base.hostname or base.username or base.password or base.query or base.fragment:
+        if base.scheme not in ("http", "https") or not base.hostname or base.username or base.password or base.query or base.fragment:
             raise InvalidFeed("Die öffentliche Pages-Adresse ist ungültig.")
-        # configure-pages supplies the current repository's public URL, including custom domain or repo path.
-        public_url = published_base.rstrip("/") + "/" + quote(path.relative_to(site_dir).as_posix(), safe="/")
+        # Pages may advertise HTTP for a custom domain. Always retrieve prices over HTTPS.
+        https_base = base._replace(scheme="https").geturl().rstrip("/")
+        public_url = https_base + "/" + quote(path.relative_to(site_dir).as_posix(), safe="/")
         try:
             previous = validate_bundle(fetch(public_url), today)
         except MissingResource:
