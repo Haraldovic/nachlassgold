@@ -1,4 +1,4 @@
-/* Both sample lenses read their descriptions from the printed index below. */
+/* Both diagrams use the descriptions from the comparison table. */
 (() => {
   'use strict';
   const index = document.querySelector('.ta-clarity-index');

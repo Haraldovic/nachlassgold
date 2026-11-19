@@ -1,8 +1,8 @@
 # Dietmar Vogelmann · Markenfamilie
 
-Alle drei Auftritte tragen Dietmars vorhandenes Vogelzeichen und führen über dieselbe Markennavigation. Warmweiß, Tintenblau und fein gezogene Linien in gedecktem Messing bilden den gemeinsamen Rahmen. Die Überschriften stehen in Cormorant Garamond, Text, Tabellen und Bedienelemente in DM Sans. Die Schriften liegen mit ihren Lizenzen im jeweiligen Angebot. Die offizielle Wortbildmarke und die Originalfotos sind bei den Bildnachweisen verzeichnet.
+Alle drei Auftritte tragen Dietmars vorhandenes Vogelzeichen und führen über dieselbe Markennavigation. Perlweiße Flächen, warme Metalltöne und großzügige Fotografie bilden den gemeinsamen Rahmen. Nachlassgold verwendet Petrol, Goldgezwitscher warmes Aubergine. Die Überschriften stehen in Cormorant Garamond, Text, Tabellen und Bedienelemente in DM Sans. Die Schriften liegen mit ihren Lizenzen im jeweiligen Angebot. Die offizielle Wortbildmarke und die Originalfotos sind bei den Bildnachweisen verzeichnet.
 
-Die Schmuckseite zeigt die Saphirkette aus dem Katalog mit einer bedienbaren Fotolupe. Der Goldankauf beginnt mit Dietmar, seinen Ankaufswegen und dem Rechner. Beim Videocast stehen Dietmar am Mikrofon, seine Gespräche und die geplanten Folgen im Mittelpunkt.
+Feingold Vogel verbindet Schmuckfotografie mit Dietmars Katalogstücken. Nachlassgold zeigt moderne Feingoldbarren und führt direkt zum Ankaufsrechner oder zur Verkaufsanfrage. Bei Goldgezwitscher eröffnet eine Studiofotografie das Gesprächsformat. Dietmars Originalporträt steht jeweils bei seiner persönlichen Vorstellung.
 
 Die Tafeln zu Farbe, Reinheit und Gewicht zeigen mehrere Beobachtungen zugleich. Die Zeichnungen illustrieren den Vergleich. Quellen und Bildnachweise sind am Atlas zugänglich.
 
