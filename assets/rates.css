@@ -1,0 +1,47 @@
+[data-rate-ticker],.ng-market,.ng-calc{--ng-ink:#2e302b;--ng-muted:#625d50;--ng-line:#d6ccba;--ng-gold:#795724;--ng-panel:#f4efe5;--ng-paper:#fcfaf5;color:var(--ng-ink);font-variant-numeric:tabular-nums}
+[data-rate-ticker]{display:flex;align-items:baseline;flex-wrap:wrap;gap:.45rem 1.15rem;padding:.8rem 0}
+.ng-ticker-label,.ng-ticker-date,.ng-ticker-link{font-size:.87rem}
+.ng-ticker-value{font-size:1.12rem}
+.ng-ticker-link,.ng-attribution a{color:inherit;text-underline-offset:.2em}
+.ng-market,.ng-calc{margin:clamp(1.3rem,4vw,3rem) 0}
+.ng-market-tabs{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1rem}
+.ng-tab,.ng-add,.ng-remove{font:inherit;cursor:pointer;border:1px solid var(--ng-line);background:transparent;color:var(--ng-ink);padding:.62em 1em;border-radius:.25rem}
+.ng-tab[aria-pressed=true],.ng-tab:hover,.ng-add:hover{background:var(--ng-ink);color:white;border-color:var(--ng-ink)}
+.ng-market .ng-metal-detail,.ng-calc-main,.ng-calc-result{border:1px solid var(--ng-line);padding:clamp(1rem,3.5vw,2.25rem);background:var(--ng-paper)}
+.ng-market .ng-market-lead{display:flex;align-items:center;gap:1rem;margin-bottom:1.4rem}
+.ng-element-symbol{border:1px solid var(--ng-line);min-width:2.7em;min-height:2.7em;display:grid;place-items:center;font:600 1rem/1.2 Georgia,serif;color:var(--ng-gold)}
+.ng-market h2,.ng-calc h2{font:inherit;font-family:Georgia,serif;font-size:clamp(1.35rem,3vw,2rem);line-height:1.1;margin:0;color:inherit}
+.ng-source-status{color:var(--ng-muted);margin-left:auto;font-size:.85em}
+.ng-market-table{border-collapse:collapse;width:100%;text-align:left;font-size:1rem}
+.ng-market-table caption{text-align:left;font-weight:600;padding:.1rem 0 .8rem}
+.ng-market-table td,.ng-market-table th{padding:.6rem .25rem;border-bottom:1px solid var(--ng-line);font-weight:normal}
+.ng-market-table thead th{font-size:.83em;color:var(--ng-muted)}
+.ng-market-table td:last-child,.ng-market-table thead th:last-child{text-align:right}
+.ng-attribution,.ng-rate-note,.ng-line-note,.ng-result-foot,.ng-result-status{font-size:.9rem;line-height:1.55}
+.ng-rate-note,.ng-attribution,.ng-line-note{color:var(--ng-muted)}
+.ng-rate-action{display:inline-flex;align-items:center;gap:.75rem;color:var(--ng-ink);font-weight:600;text-underline-offset:.25em}
+.ng-calc{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(0,1fr);align-items:start;gap:1.2rem}
+.ng-calc-main>p,.ng-terms p{line-height:1.6}
+.ng-calc-line{border:0;border-top:1px solid var(--ng-line);padding: .9rem 0 0;margin:1.4rem 0;min-width:0}
+.ng-calc-line legend{font-weight:600;font-size:.9rem;padding-right:.65rem}
+.ng-line-fields{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.7rem}
+.ng-field{display:grid;gap:.4rem;color:var(--ng-ink);font-weight:500;font-size:.87rem}
+.ng-field input,.ng-field select{margin:0;width:100%;min-width:0;min-height:2.8rem;border:1px solid #a99e8b;padding:.55rem .35rem;background:#fff;color:var(--ng-ink);font:inherit;border-radius:.2rem;box-sizing:border-box}
+.ng-field input[aria-invalid=true]{border:2px solid #923f2c}
+.ng-calc .ng-remove{border:0;text-decoration:underline;font-size:.82rem;color:var(--ng-muted);padding:.15rem 0}
+.ng-calc [hidden]{display:none!important}
+.ng-terms{border-top:1px solid var(--ng-line);padding-top:1.2rem;margin-top:1.5rem;font-size:.93rem}
+.ng-terms summary{cursor:pointer;font-weight:600}
+.ng-terms dt{font-weight:600;margin-top:.75rem}
+.ng-terms dd{margin:.15rem 0}
+.ng-calc .ng-calc-result{background:#2e322d;color:#fcfaf5;border-color:#2e322d}
+.ng-calc-result .ng-attribution,.ng-calc-result .ng-result-foot{color:#e2dece}
+.ng-result-total{font-family:Georgia,serif;line-height:1.16;font-size:clamp(1.9rem,3.7vw,3rem);margin:1.5rem 0 .4rem;color:#e2c990;overflow-wrap:anywhere}
+.ng-breakdown{margin:1.2rem 0}
+.ng-breakdown>div{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.45rem;border-top:1px solid #696d61;padding:.6rem 0}
+.ng-breakdown dd{margin:0;font-weight:600}
+.ng-calc-result .ng-rate-action{color:#fff}
+.ng-calc input:focus-visible,.ng-calc select:focus-visible,.ng-calc button:focus-visible,.ng-market button:focus-visible{outline:3px solid #a4763c;outline-offset:2px}
+@media(max-width:760px){.ng-calc{grid-template-columns:1fr}.ng-line-fields{grid-template-columns:repeat(2,minmax(0,1fr))}.ng-line-fields .ng-field:last-child{grid-column:1/-1}}
+@media(max-width:350px){.ng-line-fields{grid-template-columns:minmax(0,1fr)}}
+.ng-copy{display:block;background:transparent;color:#fff;border:1px solid #b5b49f;border-radius:.2rem;padding:.6rem .8rem;cursor:pointer;font:inherit;margin:.75rem 0}.ng-copy-message{font-size:.86rem;display:block}.ng-calc-result [data-copy-fallback]{display:block;width:100%;box-sizing:border-box;margin:1rem 0;padding:.5rem;background:#fff;color:#262823;font:inherit}.ng-calc-result .ng-rate-action{margin-top:.65rem}

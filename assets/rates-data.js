@@ -1,0 +1,42 @@
+window.NachlassgoldRates = {
+  "version": 1,
+  "currency": "EUR",
+  "unit": "g",
+  "metals": {
+    "gold": {
+      "source": "nbp",
+      "asOf": "2026-11-19",
+      "eurPerGram": 110.49247141401563,
+      "goldPlnPerGram": 487.99,
+      "plnPerEuro": 4.4165
+    },
+    "silver": {
+      "asOf": "2026-11-19",
+      "source": "archive",
+      "alloys": {
+        "800": 1.04,
+        "835": 1.09,
+        "900": 1.17,
+        "925": 1.21,
+        "950": 1.24,
+        "999": 1.3
+      }
+    },
+    "platinum": {
+      "asOf": "2026-11-19",
+      "source": "archive",
+      "alloys": {
+        "950": 37.74,
+        "999": 39.69
+      }
+    },
+    "palladium": {
+      "asOf": "2026-11-19",
+      "source": "archive",
+      "alloys": {
+        "950": 25.6,
+        "999": 26.92
+      }
+    }
+  }
+};
