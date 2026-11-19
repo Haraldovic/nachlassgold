@@ -4,7 +4,7 @@ Entpacke das ZIP und öffne `index.html` für einen ersten Rundgang. Kursübersi
 
 ## Gestaltung und Bedienung
 
-Vom Diamanten auf der Startseite gelangst du zum Ankaufsrechner, zur Verkaufsanfrage und zu den Ankaufswegen. Die Wägeprobe lässt sich im Werkstattbereich mit verschiedenen Goldproben bedienen. Bei aktivierter Bewegungsreduktion startet die Schliffstudie mit einem Standbild.
+Auf der Startseite erreichst du Verkaufsanfrage, Rechner und Ankaufswege. Über die Navigation gelangst du zum Edelsteinatlas. Quelle und Datenstand der Edelmetallkurse zeigt die Kurstabelle.
 
 ## Vorschau auf GitHub Pages
 
