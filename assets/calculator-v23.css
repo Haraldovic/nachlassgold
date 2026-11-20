@@ -96,6 +96,7 @@
 .nachlass.identity-v10 .ng23-market>.ng-rate-action{margin-top:20px;min-height:44px}
 
 /* Photos show the consultation and home visit they accompany. */
+.nachlass.identity-v10 .ng-side-content .steps>li::before{position:static;display:block;font:500 .875rem/1.5 var(--sans);margin:0 0 12px;color:#607354}
 .nachlass.identity-v10 .ng-side-content .split h2{font-size:clamp(2rem,2.6vw,2.8rem);line-height:1.12;overflow-wrap:break-word}
 .nachlass.identity-v10 .ng23-housevisit{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:start;scroll-margin-top:30px}
 .nachlass.identity-v10 .ng23-housevisit figure{margin:0;min-width:0}
