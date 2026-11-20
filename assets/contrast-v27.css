@@ -1,0 +1,148 @@
+/* Nachlassgold: white content, forest-green landmarks, gold only as an accent. */
+body.nachlass.identity-v10.contrast-v27{--ng27-green:#173e31;--ng27-ink:#173e31;--ng27-muted:#45554d;--ng27-line:#c7cec9;--ng27-gray:#f1f3f2;--ng27-gold:#97743d;background:#fff;color:var(--ng27-ink)}
+body.nachlass.identity-v10.contrast-v27 main{background:#fff}
+body.nachlass.identity-v10.contrast-v27 :is(.dv-head,.dv-head .dv-core){background:#fff}
+body.nachlass.identity-v10.contrast-v27 .dv-head{border-bottom:1px solid #bec9c2}
+body.nachlass.identity-v10.contrast-v27 .crumbbar{background:#f1f3f2;border-bottom:1px solid #d8ded9}
+body.nachlass.identity-v10.contrast-v27 .crumbs{color:#344b40;padding-block:15px}
+body.nachlass.identity-v10.contrast-v27 :is(.eyebrow,.v10-eyebrow){color:#785c2e}
+body.nachlass.identity-v10.contrast-v27 :is(.section,.band,.page-intro) .button:not(.ghost){background:#173e31;border-color:#173e31;color:#fff;border-radius:0}
+body.nachlass.identity-v10.contrast-v27 :is(.section,.band,.page-intro) .button:not(.ghost):hover{background:#285b47;border-color:#285b47}
+body.nachlass.identity-v10.contrast-v27 .v10-action.primary{background:#173e31;border-color:#173e31;color:#fff}
+
+/* A clear first chapter for every information page. */
+body.nachlass.identity-v10.contrast-v27 .page-intro{background:#173e31;border-bottom:4px solid #b59352;padding-block:48px 50px;color:#fff}
+body.nachlass.identity-v10.contrast-v27 .page-intro :is(h1,h2,.lead,p,a){color:#fff}
+body.nachlass.identity-v10.contrast-v27 .page-intro .eyebrow{color:#e2c58b}
+body.nachlass.identity-v10.contrast-v27 .page-intro .lead{color:#e2ebe6;max-width:68ch}
+body.nachlass.identity-v10.contrast-v27 .page-intro .button:not(.ghost){background:#fff;color:#173e31;border-color:#fff}
+body.nachlass.identity-v10.contrast-v27 .page-intro .textlink{color:#fff;border-color:#c5ad78}
+body.nachlass.identity-v10.contrast-v27 .band{background:#f1f3f2;border-block:1px solid #c7cec9}
+body.nachlass.identity-v10.contrast-v27 .ng-side-content .band{background:#f1f3f2;border-top:3px solid #173e31;padding:32px;margin-block:0 48px}
+body.nachlass.identity-v10.contrast-v27 .ng-side-content .band .section{padding:0}
+body.nachlass.identity-v10.contrast-v27 .ng-side-content :is(h2,h3){color:#173e31}
+body.nachlass.identity-v10.contrast-v27 .ng-side-content .steps>li::before{position:static;display:block;font:500 .875rem/1.5 var(--sans);margin:0 0 12px;color:#5b6b60}
+body.nachlass.identity-v10.contrast-v27 .ng-subnav{border-top:3px solid #173e31;padding-top:18px}
+body.nachlass.identity-v10.contrast-v27 .ng-subnav a{padding:13px 10px;border-color:#c9d1cb}
+body.nachlass.identity-v10.contrast-v27 .ng-subnav a[aria-current=page]{background:#173e31;color:#fff;border-color:#173e31}
+body.nachlass.identity-v10.contrast-v27 .ng23-housevisit{border-top:1px solid #b6c3ba;padding-top:35px}
+
+/* Homepage: the price band separates the image-led introduction from the tools. */
+body.nachlass.identity-v10.contrast-v27 .ng20-home{background:#fff;--ng20-ink:#173e31;--ng20-green:#173e31;--ng20-soft:#f1f3f2;--ng20-line:#c7cec9}
+body.nachlass.identity-v10.contrast-v27 .ng20-hero{background:#fff}
+body.nachlass.identity-v10.contrast-v27 .ng20-home .ng20-hero h1{color:#173e31}
+body.nachlass.identity-v10.contrast-v27 .ng20-home .ng20-hero h1 em{color:#80602f}
+body.nachlass.identity-v10.contrast-v27 .ng20-home .ng20-intro{color:#45554d}
+body.nachlass.identity-v10.contrast-v27 .ng20-home .ng20-button{background:#173e31;border-color:#173e31;color:#fff}
+body.nachlass.identity-v10.contrast-v27 .ng20-home .ng20-button:hover{background:#285b47;border-color:#285b47}
+body.nachlass.identity-v10.contrast-v27 .ng20-prices{background:#173e31;color:#fff;border-top:0;border-bottom:4px solid #b59352;padding-block:38px 30px}
+body.nachlass.identity-v10.contrast-v27 .ng20-home .ng20-price-heading h2{color:#fff}
+body.nachlass.identity-v10.contrast-v27 .ng20-home .ng20-price-heading .ng20-kicker{color:#e2c58b}
+body.nachlass.identity-v10.contrast-v27 :is(.ng20-price-heading>a,.ng20-price-foot a){color:#fff;text-decoration-color:#d6bc83}
+body.nachlass.identity-v10.contrast-v27 :is(.ng20-price-grid,.ng20-rate){border-color:#5b7769}
+body.nachlass.identity-v10.contrast-v27 .ng20-home :is(.ng20-rate-name,.ng20-rate-value){color:#fff}
+body.nachlass.identity-v10.contrast-v27 .ng20-home :is(.ng20-rate-name small,.ng20-rate-value small){color:#e0c795}
+body.nachlass.identity-v10.contrast-v27 .ng20-home :is(.ng20-rate-status,.ng20-rate .ng-attribution){color:#dce7e0}
+body.nachlass.identity-v10.contrast-v27 .ng20-home .ng20-rate[data-archive=true] .ng20-rate-status{color:#f0d7a5}
+body.nachlass.identity-v10.contrast-v27 .ng20-home .ng20-price-foot :is(p,strong){color:#e2ebe6}
+body.nachlass.identity-v10.contrast-v27 .ng20-home [data-rate-overview]>p,body.nachlass.identity-v10.contrast-v27 .ng20-home [data-rate-overview]>p a{color:#fff}
+
+/* Calculator: white fields, an unmistakable result, and a separate table below. */
+body.nachlass.identity-v10.contrast-v27 .ng23-home-calculator{background:#f1f3f2;border-bottom:1px solid #c7cec9;padding-block:68px 38px}
+body.nachlass.identity-v10.contrast-v27 .ng23-calc{border:1px solid #aebdb3;background:#fff}
+body.nachlass.identity-v10.contrast-v27 .ng23-calc .ng-calc-main{background:#fff}
+body.nachlass.identity-v10.contrast-v27 .ng23-calc .ng-field{color:#173e31;font-weight:600}
+body.nachlass.identity-v10.contrast-v27 .ng23-calc .ng-field :is(select,input){background-color:#fff;border-color:#82988a;color:#173e31}
+body.nachlass.identity-v10.contrast-v27 .ng23-calc .ng-field input[aria-invalid=true]{background:#fff8f5;border-color:#a5402a}
+body.nachlass.identity-v10.contrast-v27 .ng23-calc .ng-calc-result{background:#173e31;border-color:#173e31;color:#fff}
+body.nachlass.identity-v10.contrast-v27 .ng23-calc .ng-calc-result :is(h2,.ng-result-total,.ng-breakdown dd){color:#fff}
+body.nachlass.identity-v10.contrast-v27 .ng23-calc .ng23-result-kicker{color:#e2c58b}
+body.nachlass.identity-v10.contrast-v27 .ng23-calc :is(.ng-result-status,.ng-result-foot,.ng-attribution,.ng-copy-message){color:#e0ebe4}
+body.nachlass.identity-v10.contrast-v27 .ng23-calc .ng-breakdown>div{border-color:#5c7869;color:#e2ebe6}
+body.nachlass.identity-v10.contrast-v27 .ng23-calc .ng-breakdown dt{color:#e2ebe6}
+body.nachlass.identity-v10.contrast-v27 .ng23-calc .ng-rate-action{background:#fff;color:#173e31;border-color:#fff;font-weight:600}
+body.nachlass.identity-v10.contrast-v27 .ng23-calc .ng-rate-action:hover{background:#e4ece7}
+body.nachlass.identity-v10.contrast-v27 .ng23-calc .ng-copy{color:#fff;border-color:#90aa9a;background:transparent}
+body.nachlass.identity-v10.contrast-v27 .ng23-calc .ng-copy:hover{background:#295746}
+body.nachlass.identity-v10.contrast-v27 .ng23-market-section{background:#fff;border-bottom:1px solid #b9c7bf;padding-block:65px 75px}
+body.nachlass.identity-v10.contrast-v27 .ng23-market .ng-metal-detail{background:#fff;border-color:#a9b9ae}
+body.nachlass.identity-v10.contrast-v27 .ng23-market .ng-market-tabs{border-color:#a9b9ae}
+body.nachlass.identity-v10.contrast-v27 .ng23-market .ng-tab{background:#edf1ee;border-color:#a9b9ae;color:#173e31}
+body.nachlass.identity-v10.contrast-v27 .ng23-market .ng-tab[aria-pressed=true]{background:#173e31;color:#fff}
+body.nachlass.identity-v10.contrast-v27 .ng23-market .ng-market-table thead th{color:#173e31;font-weight:600;border-bottom:2px solid #173e31;padding-bottom:12px}
+body.nachlass.identity-v10.contrast-v27 .ng23-market .ng-market-table tbody tr:nth-child(even){background:#f4f6f4}
+body.nachlass.identity-v10.contrast-v27 .ng23-market .ng-market-table :is(th,td){padding-inline:10px}
+
+/* Service chapters alternate in tone, with generous space around their headings. */
+body.nachlass.identity-v10.contrast-v27 .ng20-routes{background:#fff;padding-block:80px}
+body.nachlass.identity-v10.contrast-v27 .ng21-route-copy{border-top:3px solid #173e31}
+body.nachlass.identity-v10.contrast-v27 .ng20-home .ng20-route-list h3{color:#173e31;font-weight:600}
+body.nachlass.identity-v10.contrast-v27 .ng20-process{background:#f1f3f2;border-block:1px solid #bcc8c0;padding-block:72px 80px}
+body.nachlass.identity-v10.contrast-v27 .ng20-home .ng20-steps li{border-color:#b8c5bc}
+body.nachlass.identity-v10.contrast-v27 .ng20-home .ng20-steps h3{color:#173e31;font-weight:600}
+body.nachlass.identity-v10.contrast-v27 .ng20-send{background:#173e31;border-bottom:4px solid #b59352}
+body.nachlass.identity-v10.contrast-v27 .ng20-home .ng20-send-copy .ng20-button-light{background:#fff;color:#173e31;border-color:#fff}
+body.nachlass.identity-v10.contrast-v27 .ng20-person{background:#fff;padding-block:85px}
+body.nachlass.identity-v10.contrast-v27 .ng20-portrait figcaption{background:#173e31;color:#fff}
+body.nachlass.identity-v10.contrast-v27 .ng20-portrait figcaption span{color:#dce7df}
+body.nachlass.identity-v10.contrast-v27 .ng20-faq{background:#f1f3f2;border-block:1px solid #bcc8c0;padding-block:65px}
+body.nachlass.identity-v10.contrast-v27 .ng20-faq-list details{background:#fff;border:1px solid #b8c5bc;margin-bottom:12px;padding-inline:24px}
+body.nachlass.identity-v10.contrast-v27 .ng20-faq-list summary{color:#173e31;font-weight:600}
+body.nachlass.identity-v10.contrast-v27 .ng20-faq-list details[open]{border-color:#173e31}
+body.nachlass.identity-v10.contrast-v27 .ng20-regional{background:#fff;padding-block:50px}
+
+/* Dedicated service pages and forms. */
+body.nachlass.identity-v10.contrast-v27 .ng-shipping-intro{border-bottom:4px solid #b59352;padding-block:55px}
+body.nachlass.identity-v10.contrast-v27 .ng-shipping-intro h1{color:#173e31}
+body.nachlass.identity-v10.contrast-v27 .ng-document-preview{background:#edf1ee;border:1px solid #bac8be;border-top:3px solid #173e31}
+body.nachlass.identity-v10.contrast-v27 .v16-shipping-detail{padding-block:65px;border-top:0}
+body.nachlass.identity-v10.contrast-v27 .ng-packing{background:#f1f3f2;border-top:3px solid #173e31;padding:38px;margin-bottom:55px}
+body.nachlass.identity-v10.contrast-v27 .ng-video-note{background:#173e31;border-top:4px solid #b59352;color:#fff}
+body.nachlass.identity-v10.contrast-v27 .ng-video-note :is(h2,p,.v10-action){color:#fff}
+body.nachlass.identity-v10.contrast-v27 .ng-video-note .v10-eyebrow{color:#e2c58b}
+body.nachlass.identity-v10.contrast-v27 .ng-video-note .v10-action.primary{background:#fff;color:#173e31;border-color:#fff}
+body.nachlass.identity-v10.contrast-v27 .ng-after-calculation{border-top:3px solid #173e31;padding-top:38px}
+body.nachlass.identity-v10.contrast-v27 .ng-personal{background:#f1f3f2;border-block:1px solid #b9c8be}
+body.nachlass.identity-v10.contrast-v27 .dv-atlas-call{background:#f1f3f2;border-top:3px solid #173e31}
+body.nachlass.identity-v10.contrast-v27 .faq{background:#fff;border:1px solid #b8c5bc;padding:10px 24px;margin:0 0 14px}
+body.nachlass.identity-v10.contrast-v27 .faq summary{color:#173e31;font-weight:600;padding-block:14px}
+body.nachlass.identity-v10.contrast-v27 .faq[open]{border-color:#173e31;background:#f1f3f2}
+body.nachlass.identity-v10.contrast-v27 .faq p{color:#45554d;line-height:1.8}
+body.nachlass.identity-v10.contrast-v27 .contact-compose{background:#f1f3f2;border:1px solid #c4cec7;border-top:3px solid #173e31;padding:32px}
+body.nachlass.identity-v10.contrast-v27 .inquiry-form label{display:block;font-size:1rem;font-weight:600;color:#173e31;margin-top:18px}
+body.nachlass.identity-v10.contrast-v27 .inquiry-form :is(input,select,textarea){background-color:#fff;color:#173e31;border:1px solid #82988a;border-radius:0;padding:13px 14px;font-size:1rem}
+body.nachlass.identity-v10.contrast-v27 .inquiry-form select{padding-right:38px;background-image:url('select-chevron-v23.svg');background-position:right 14px center;background-size:12px 8px;background-repeat:no-repeat;appearance:none}
+body.nachlass.identity-v10.contrast-v27 .inquiry-form .actions{margin-top:24px}
+
+/* Legal text remains unchanged; visible rules separate its reading chapters. */
+body.nachlass.identity-v10.contrast-v27:is(.page-agb,.page-impressum,.page-datenschutz,.page-bildnachweise) main>.editorial{max-width:900px}
+body.nachlass.identity-v10.contrast-v27:is(.page-agb,.page-impressum,.page-datenschutz,.page-bildnachweise) .editorial>section{padding-top:28px;margin-top:30px;border-top:1px solid #b5c3b9}
+body.nachlass.identity-v10.contrast-v27:is(.page-agb,.page-impressum,.page-datenschutz,.page-bildnachweise) .editorial>section:first-child{margin-top:0;border-top:3px solid #173e31}
+body.nachlass.identity-v10.contrast-v27:is(.page-agb,.page-impressum,.page-datenschutz,.page-bildnachweise) .editorial h2{color:#173e31}
+
+/* A distinct end to every page, with readable contact and legal navigation. */
+body.nachlass.identity-v10.contrast-v27 .site-footer{background:#173e31;color:#fff;border-top:4px solid #b59352}
+body.nachlass.identity-v10.contrast-v27 .site-footer :is(a,p,small,.foot-brand,.foot-title){color:#edf4ef}
+body.nachlass.identity-v10.contrast-v27 .site-footer .foot-heading{color:#e2c58b}
+body.nachlass.identity-v10.contrast-v27 .site-footer .foot-base{border-color:#5b7769}
+body.nachlass.identity-v10.contrast-v27 .ng20-footer-network{border-color:#5b7769}
+body.nachlass.identity-v10.contrast-v27 .ng20-footer-network img{background:#fff;mix-blend-mode:normal}
+body.nachlass.identity-v10.contrast-v27 .ng20-whatsapp{background:#173e31;color:#fff;border:1px solid #c4ac75;box-shadow:0 4px 18px #12362a26}
+body.nachlass.identity-v10.contrast-v27 .ng-mobile-actions{background:#fff;border-top:2px solid #173e31}
+
+@media(max-width:760px){
+ body.nachlass.identity-v10.contrast-v27 .page-intro{padding-block:34px 38px}
+ body.nachlass.identity-v10.contrast-v27 .ng20-prices{padding-block:30px 25px}
+ body.nachlass.identity-v10.contrast-v27 .ng23-home-calculator{padding-block:44px 30px}
+ body.nachlass.identity-v10.contrast-v27 .ng23-market-section{padding-block:38px 45px}
+ body.nachlass.identity-v10.contrast-v27 .ng20-routes{padding-block:48px}
+ body.nachlass.identity-v10.contrast-v27 :is(.ng20-process,.ng20-person,.ng20-faq){padding-block:48px}
+ body.nachlass.identity-v10.contrast-v27 .ng20-faq-list details{padding-inline:18px}
+ body.nachlass.identity-v10.contrast-v27 .ng-side-content .band{padding:25px 20px;margin-bottom:36px}
+ body.nachlass.identity-v10.contrast-v27 .ng23-housevisit{padding-top:28px}
+ body.nachlass.identity-v10.contrast-v27 .v16-shipping-detail{padding-block:44px}
+ body.nachlass.identity-v10.contrast-v27 .ng-packing{padding:25px 20px;margin-bottom:40px}
+ body.nachlass.identity-v10.contrast-v27 .ng-shipping-intro{padding-block:35px 42px}
+ body.nachlass.identity-v10.contrast-v27 .contact-compose{padding:26px 20px}
+ body.nachlass.identity-v10.contrast-v27 .faq{padding-inline:18px}
+}
