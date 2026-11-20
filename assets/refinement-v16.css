@@ -1,0 +1,139 @@
+/* Revision 16 — photographic processes, balanced imagery, readable legal pages. */
+.identity-v10 .v16-social-icon{display:inline-block;width:20px;height:20px;flex:0 0 20px;margin-right:9px;vertical-align:-4px;fill:currentColor}
+.identity-v10 .foot-links .v16-social-icon{width:17px;height:17px;vertical-align:-3px}
+.identity-v10 .v16-icon-credits{width:min(90%,850px);margin:0 auto;padding:15px 0 65px}
+.identity-v10 .v16-icon-credits h2{font-size:2rem}
+.identity-v10 .v16-icon-credits p{font-size:1rem;line-height:1.75}
+
+/* Feingold Vogel: three equal windows into the brand. */
+.feingold.maison-v15 .f15-hero-photo img{object-position:53% 55%}
+.feingold.maison-v15 .f15-themes{grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch}
+.feingold.maison-v15 .f15-theme{display:flex;flex-direction:column;align-items:flex-start}
+.feingold.maison-v15 .f15-theme-photo{width:100%;height:auto;aspect-ratio:4/5;flex-shrink:0}
+.feingold.maison-v15 .f15-theme h3{font-size:2.3rem}
+.feingold.maison-v15 .f15-theme p{font-size:1rem;line-height:1.7;margin-bottom:20px}
+.feingold.maison-v15 .f15-theme .f15-link{margin-top:auto;align-self:flex-start;font-size:.9375rem}
+.identity-v10 .v16-brand-insights{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0}
+.identity-v10 .v16-brand-insights .card{display:flex;flex-direction:column;align-items:flex-start;padding:30px 32px;background:transparent;border:0;border-left:1px solid #c8cbbd;border-radius:0;box-shadow:none;min-width:0}
+.identity-v10 .v16-brand-insights .card:first-child{border-left:0;padding-left:0}
+.identity-v10 .v16-brand-insights .card h3{font-size:clamp(1.7rem,2.7vw,2.5rem);margin:0 0 16px;white-space:nowrap}
+.identity-v10 .v16-brand-insights .card p{line-height:1.75;margin:0 0 25px;font-size:1rem}
+.identity-v10 .v16-brand-insights .card .textlink{margin-top:auto;min-height:44px;display:inline-flex;align-items:center;font-size:.9375rem}
+
+/* Numbered rows make the next step visible without a grid of cards. */
+.identity-v10 .v16-process-band{background:#edf0e9;border-block:1px solid #d8dccc}
+.identity-v10 .v16-process-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:10%;padding-block:80px}
+.identity-v10 .v16-process-intro h2,.identity-v10 .v16-preparation h2{font-size:clamp(2.5rem,4vw,4.1rem);line-height:1.07;margin:18px 0 25px}
+.identity-v10 .v16-process-intro>p:not(.eyebrow){line-height:1.8;max-width:40ch}
+.identity-v10 .v16-process-intro .actions{display:flex;flex-direction:column;align-items:flex-start;gap:18px;margin-top:30px}
+.identity-v10 .v16-process-list{list-style:none;padding:0;margin:0;display:block;counter-reset:none}
+.identity-v10 .v16-process-list>li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:20px;padding:28px 0;border:0;border-top:1px solid #c8cbbd;background:transparent;box-shadow:none;min-height:0}
+.identity-v10 .v16-process-list>li:first-child{padding-top:0;border-top:0}
+.identity-v10 .v16-process-list>li::before{content:none}
+.identity-v10 .v16-step-no{font:400 1.85rem/1.2 var(--serif);color:#806d45;padding-top:2px}
+.identity-v10 .v16-process-list h3{font:400 clamp(1.75rem,2.4vw,2.25rem)/1.13 var(--serif);letter-spacing:-.015em;margin:0 0 13px;color:inherit}
+.identity-v10 .v16-process-list p{font-size:1rem;line-height:1.8;margin:0;max-width:49ch}
+.identity-v10 .v16-process-list a{display:inline-block;margin-top:14px;text-underline-offset:5px}
+.identity-v10 .v16-preparation{display:grid;grid-template-columns:.9fr 1.1fr;gap:10%;align-items:center;padding-block:75px}
+.identity-v10 .v16-preparation-photo{margin:0;overflow:hidden;height:570px}
+.identity-v10 .v16-preparation-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.identity-v10 .v16-checklist{margin:0;padding:0}
+.identity-v10 .v16-checklist>div{padding:22px 0;border-bottom:1px solid #ccd0c1}
+.identity-v10 .v16-checklist>div:first-child{padding-top:0}
+.identity-v10 .v16-checklist dt{font:500 1.0625rem/1.5 var(--sans);margin-bottom:8px;color:inherit}
+.identity-v10 .v16-checklist dd{margin:0;font-size:1rem;line-height:1.75;color:inherit}
+.identity-v10 .v16-preparation .actions{margin-top:28px;gap:18px}
+
+/* Nachlassgold: two chapters, each with a real photograph and two clear steps. */
+.identity-v10 .v16-send-story{margin-top:44px;display:grid;gap:42px}
+.identity-v10 .v16-send-chapter{display:grid;grid-template-columns:1fr 1fr;gap:7%;align-items:center}
+.identity-v10 .v16-send-photo{margin:0;height:385px;overflow:hidden}
+.identity-v10 .v16-send-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.identity-v10 .v16-send-chapter:nth-child(2) .v16-send-photo{grid-column:2;grid-row:1}
+.identity-v10 .v16-send-chapter:nth-child(2) .v16-process-list{grid-column:1;grid-row:1}
+.identity-v10 .v16-send-story .v16-process-list>li{padding-block:26px}
+.identity-v10 .v16-send-story .v16-process-list>li:first-child{padding-top:0}
+.identity-v10 .v16-valuation{display:grid;grid-template-columns:.9fr 1.1fr;gap:10%;align-items:start}
+.identity-v10 .v16-valuation .ng-section-heading{margin:0}
+.identity-v10 .v16-valuation .ng-section-heading h2{font-size:clamp(2.6rem,4vw,4.1rem)}
+.identity-v10 .v16-valuation .ng-section-heading>p{max-width:40ch;line-height:1.8}
+.identity-v10 .v16-valuation .ng-section-heading .v10-action{margin-top:15px}
+.identity-v10 .v16-purity-note{margin:25px 0 0;padding:22px 0;border-bottom:1px solid #ccd0c1;display:flex;flex-direction:column;gap:10px}
+.identity-v10 .v16-purity-note span{font-size:.875rem;line-height:1.5}
+.identity-v10 .v16-purity-note strong{font:400 clamp(1.35rem,2vw,1.9rem)/1.3 var(--serif)}
+.identity-v10 .v16-shipping-detail{display:grid;grid-template-columns:.9fr 1.1fr;gap:9%;align-items:start;border-top:1px solid #d5d9ca}
+.identity-v10 .v16-shipping-detail-heading h2{font-size:clamp(2.8rem,3.8vw,4rem);margin:20px 0 30px}
+.identity-v10 .v16-shipping-document{margin:0 0 22px;aspect-ratio:4/3;overflow:hidden}
+.identity-v10 .v16-shipping-document img{width:100%;height:100%;object-fit:cover;display:block}
+.identity-v10 .v16-packing-photo{margin:28px 0 0;max-width:470px;aspect-ratio:3/2}
+.identity-v10 .v16-packing-photo img{width:100%;height:100%;object-fit:cover;display:block}
+
+/* Goldgezwitscher retains its warmer, larger magazine-free campaign typography. */
+.goldgezwitscher.identity-v10 .v16-funding-home{display:grid;grid-template-columns:1fr 1fr;gap:8%;align-items:center}
+.goldgezwitscher.identity-v10 .v16-funding-home h2{margin-bottom:0}
+.goldgezwitscher.identity-v10 .v16-funding-home>div>p:not(.v10-eyebrow){font-size:1.0625rem;line-height:1.8;max-width:48ch;margin:0 0 25px}
+.goldgezwitscher.identity-v10 .v16-funding-home .v10-actions{margin:0;align-items:flex-start}
+.goldgezwitscher.identity-v10 .v16-funding-mark{min-height:340px;background:#d8bd78;color:#283f3e;padding:40px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:18px;text-align:center}
+.goldgezwitscher.identity-v10 .v16-funding-mark strong{font:400 7.5rem/.9 var(--serif);letter-spacing:-.05em}
+.goldgezwitscher.identity-v10 .v16-funding-mark>span:last-child{font-size:1rem}
+.goldgezwitscher.identity-v10 .v16-campaign-note{font-size:.875rem;line-height:1.65;margin:22px 0 0;max-width:49ch;color:#58625a}
+.goldgezwitscher.identity-v10 .v16-sponsor-startnext{margin:0 0 30px}
+.goldgezwitscher.identity-v10 .gg-profile-links a>strong{display:block}
+
+/* Scoped legal typesetting: no promise of shop terms before a shop exists. */
+.identity-v10 .v16-legal{padding-bottom:70px}
+.identity-v10 .v16-legal-intro{width:min(90%,1140px);padding:55px 0 40px;margin:auto;border-bottom:1px solid #d4d5ca}
+.identity-v10 .v16-legal-intro h1{font:400 clamp(2.5rem,5vw,4.6rem)/1.04 var(--serif);letter-spacing:-.03em;margin:20px 0 25px}
+.identity-v10 .v16-legal-intro>p:last-child{max-width:58ch;font-size:1.0625rem;line-height:1.75}
+.identity-v10 .v16-legal-body{width:min(90%,820px);margin:45px auto 0}
+.identity-v10 .v16-legal-body section{padding:0;margin:0 0 36px}
+.identity-v10 .v16-legal-body h2{font:400 clamp(1.9rem,3vw,2.5rem)/1.15 var(--serif);margin:0 0 17px}
+.identity-v10 .v16-legal-body p{font-size:1rem;line-height:1.85;margin:0 0 16px}
+.identity-v10 .v16-legal-body a{overflow-wrap:anywhere;text-underline-offset:4px}
+.identity-v10 .v16-legal-date{padding-top:18px;border-top:1px solid #d4d5ca}
+
+@media(max-width:1000px){
+ .identity-v10 .v16-brand-insights .card{padding-inline:22px}
+ .identity-v10 .v16-brand-insights .card h3{font-size:1.75rem;white-space:normal}
+ .identity-v10 .v16-process-layout,.identity-v10 .v16-preparation,.identity-v10 .v16-valuation,.identity-v10 .v16-shipping-detail{gap:6%}
+ .identity-v10 .v16-send-photo{height:365px}
+ .identity-v10 .v16-send-chapter{gap:5%}
+ .identity-v10 .v16-process-list>li{grid-template-columns:32px minmax(0,1fr);gap:13px}
+}
+@media(max-width:700px){
+ .feingold.maison-v15 .f15-hero-photo img{object-position:53% 55%}
+ .feingold.maison-v15 .f15-themes{grid-template-columns:1fr;gap:40px}
+ .feingold.maison-v15 .f15-theme:first-child{grid-column:auto}
+ .feingold.maison-v15 .f15-theme-photo,.feingold.maison-v15 .f15-theme:first-child .f15-theme-photo{height:auto;aspect-ratio:4/3}
+ .feingold.maison-v15 .f15-theme h3,.feingold.maison-v15 .f15-theme:first-child h3{font-size:2.5rem}
+ .identity-v10 .v16-brand-insights{grid-template-columns:1fr}
+ .identity-v10 .v16-brand-insights .card,.identity-v10 .v16-brand-insights .card:first-child{border-left:0;border-top:1px solid #c8cbbd;padding:28px 0}
+ .identity-v10 .v16-brand-insights .card h3{font-size:2.2rem}
+ .identity-v10 .v16-brand-insights .card p{margin-bottom:14px}
+ .identity-v10 .v16-process-layout,.identity-v10 .v16-preparation,.identity-v10 .v16-valuation,.identity-v10 .v16-shipping-detail{grid-template-columns:1fr;gap:35px}
+ .identity-v10 .v16-process-layout,.identity-v10 .v16-preparation{padding-block:48px}
+ .identity-v10 .v16-process-intro h2,.identity-v10 .v16-preparation h2{font-size:2.8rem}
+ .identity-v10 .v16-process-list h3{font-size:1.85rem}
+ .identity-v10 .v16-process-list p{font-size:1rem;line-height:1.75}
+ .identity-v10 .v16-preparation-photo{height:auto;aspect-ratio:4/3}
+ .identity-v10 .v16-preparation .actions{align-items:flex-start;flex-direction:column}
+ .identity-v10 .v16-send-story{margin-top:30px;gap:35px}
+ .identity-v10 .v16-send-chapter{grid-template-columns:1fr;gap:26px}
+ .identity-v10 .v16-send-photo{height:auto;aspect-ratio:3/2}
+ .identity-v10 .v16-send-chapter:nth-child(2) .v16-send-photo,.identity-v10 .v16-send-chapter:nth-child(2) .v16-process-list{grid-column:auto;grid-row:auto}
+ .identity-v10 .v16-send-story .v16-process-list>li{padding-block:20px}
+ .identity-v10 .v16-valuation .ng-section-heading h2{font-size:2.8rem}
+ .identity-v10 .v16-purity-note strong{font-size:1.5rem}
+ .identity-v10 .v16-shipping-detail-heading h2{font-size:2.8rem}
+ .identity-v10 .v16-shipping-document{aspect-ratio:3/2}
+ .goldgezwitscher.identity-v10 .v16-funding-home{grid-template-columns:1fr;gap:28px}
+ .goldgezwitscher.identity-v10 .v16-funding-home>div>p:not(.v10-eyebrow){font-size:1rem}
+ .goldgezwitscher.identity-v10 .v16-funding-mark{min-height:250px;padding:28px}
+ .goldgezwitscher.identity-v10 .v16-funding-mark strong{font-size:6rem}
+ .identity-v10 .v16-legal-intro{padding-block:35px 25px}
+ .identity-v10 .v16-legal-intro h1{font-size:clamp(2.15rem,8.8vw,3rem);overflow-wrap:anywhere}
+}
+@media(prefers-reduced-motion:reduce){.identity-v10 .f15-hero-photo img{animation:none;transform:none}}
+
+body.goldgezwitscher.identity-v10 .v16-legal .v16-legal-body h2{font:500 clamp(1.5rem,2.3vw,2rem)/1.25 var(--sans);letter-spacing:-.025em}
+body.goldgezwitscher.identity-v10 .v16-legal .v16-legal-intro h1{font:500 clamp(2.4rem,5vw,4.5rem)/1.08 var(--sans);letter-spacing:-.04em}
