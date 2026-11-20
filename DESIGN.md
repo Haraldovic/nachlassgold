@@ -21,3 +21,11 @@ Die aktuelle Gestaltung wird durch assets/family-v10.css und assets/identity-v10
 
 ## Ergänzung · November 2026
 Begleitschein und Rechner sind direkt im Einstieg und in der Navigation erreichbar. Die Startseite erklärt Einsendung, Bewertung und Angebotsentscheidung offen; Hausbesuche haben einen eigenen Zugang. Die Versandseite zeigt eine optimierte Vorschau des unveränderten Original-PDF. Häufige Fragen und Abschläge im Rechner sind zunächst aufgeklappt. TikTok bleibt ein externer Link ohne automatisches Einbetten. Kursversorgung und Berechnungslogik sind unverändert.
+
+
+## Überarbeitung 22 · 20. November 2026
+Die geprüften HIGAgentSkills (justinwetch/HIGAgentSkills, Commit 2206ff935b4affa9ad249a5399a3e8e29f5f6edd) dienen als Gestaltungsreferenz für Hierarchie, Lesbarkeit, zugängliche Bedienung und zurückhaltende Bewegung. Keine Repository-Skripte oder optionalen Enforce-/Duo-Workflows werden auf den Websites ausgeführt. Native Apple-Oberflächen und SF-Symbols werden nicht übernommen.
+
+Gemeinsam bleiben der Vogel, die mittige Wortmarke, die drei sichtbaren Markenlinks, lokal geladene Schriften und die helle Farbwelt. Die Unterzeilen behalten ihre eigenen Texte und dieselbe typografische Behandlung. Die Seiten haben dagegen eigene Bildkompositionen und Hierarchien: Schmuckinszenierung bei Feingold Vogel, nachvollziehbare Bewertung und vier fotografische Verkaufswege bei Nachlassgold, Gastgeber und Gesprächsformat bei Goldgezwitscher.
+
+`assets/refinement-v22.css` bündelt die Überarbeitung. Navigation zeigt die aktuelle Unterseite, wichtige Bedienelemente haben ausreichende Zielgrößen und sichtbare Fokuszustände. Fotos verwenden responsive Quellen; es gibt keine neue Animationsbibliothek und keine zusätzlichen externen Anfragen. Reduzierte Bewegung wird respektiert. Inhalte, Kursquellen, Rechner, Versand-PDF und rechtliche Seiten bleiben verfügbar.
