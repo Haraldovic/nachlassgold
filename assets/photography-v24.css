@@ -1,0 +1,7 @@
+/* Two genuine photographs with a shared, light setting. */
+.nachlass.edition22 .ng20-home .ng20-slide img{object-position:50% 50%}
+.nachlass.edition22 .ng20-home .ng20-slide:first-child img{object-position:54% 50%}
+@media(max-width:760px){
+ .nachlass.edition22 .ng20-gallery{height:clamp(290px,78vw,430px)}
+ .nachlass.edition22 .ng20-home .ng20-slide:first-child img{object-position:50% 50%}
+}
