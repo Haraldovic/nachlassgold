@@ -94,8 +94,11 @@
       item.dataset.archive = String(quote?.source === 'archive');
       const name = el('span', 'ng20-rate-name');
       name.append(el('small', '', metal.symbol), metal.name);
-      const value = el('strong', 'ng20-rate-value', quote ? money(priceFor(quote, 999)) : '–');
-      if (quote) value.append(el('small', '', '/ g'));
+      const value = el('strong', 'ng20-rate-value');
+      if (quote) {
+        const amount = priceFor(quote, 999).toLocaleString('de-DE', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+        value.append(el('span', 'ng21-amount', amount), el('span', 'ng21-currency', '€'), el('small', '', '/ g'));
+      } else value.textContent = '–';
       item.append(name, value, el('span', 'ng20-rate-status', quote ? status(quote) : 'Kein Kurs verfügbar'), attribution(quote));
       return item;
     });

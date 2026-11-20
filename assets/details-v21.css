@@ -1,0 +1,13 @@
+/* Shared contact details, local platform marks and regional association. */
+.identity-v10 .v21-whatsapp-icon{display:inline-block;width:22px;height:22px;flex:0 0 22px;vertical-align:-5px;margin-right:9px;fill:currentColor}
+.identity-v10 .ng20-button .v21-whatsapp-icon{margin:0}
+.goldgezwitscher.identity-v10 .gg-profile-links a strong{display:inline-flex;align-items:center;gap:14px}
+.goldgezwitscher.identity-v10 .gg-profile-links strong svg{width:28px;height:28px;flex:0 0 28px;margin:0}
+.goldgezwitscher .journal-footer .foot{display:flex;align-items:flex-start;justify-content:space-between;gap:50px;padding-block:48px}
+.goldgezwitscher .gg21-footer-brand{display:flex;flex-direction:column;align-items:flex-start;gap:28px;max-width:100%}
+.goldgezwitscher .gg21-regional{display:flex;align-items:center;gap:18px;color:#344b42;text-decoration:none;font:400 .875rem/1.5 var(--sans)}
+.goldgezwitscher .gg21-regional img{display:block;width:130px;height:auto;max-width:40vw;mix-blend-mode:multiply}
+.goldgezwitscher .gg21-regional span{max-width:165px}
+.goldgezwitscher .gg21-regional:hover span{text-decoration:underline;text-underline-offset:4px}
+.goldgezwitscher .gg21-regional:focus-visible{outline:2px solid #8a713e;outline-offset:6px}
+@media(max-width:700px){.goldgezwitscher .journal-footer .foot{flex-direction:column;gap:35px;padding-block:38px}.goldgezwitscher .gg21-regional img{width:112px}.goldgezwitscher .gg21-footer-brand{gap:24px}.goldgezwitscher .journal-footer .foot-links{gap:8px}}

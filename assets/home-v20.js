@@ -1,25 +1,17 @@
-/* The photo sequence is optional. Links and content work without JavaScript. */
+/* Decorative, softly crossfading photography. Reduced motion keeps the first image. */
 (() => {
   'use strict';
   const gallery = document.querySelector('[data-ng-gallery]');
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
   if (gallery) {
     const slides = [...gallery.querySelectorAll('[data-ng-slide]')];
-    const buttons = [...gallery.querySelectorAll('[data-ng-pick]')];
-    const pause = gallery.querySelector('[data-ng-pause]');
-    const pauseLabel = gallery.querySelector('[data-ng-pause-label]');
-    let current = 0, timer, request = 0, paused = false, hovered = false, focused = false, visible = true;
-    function stop() { clearTimeout(timer); }
+    let current = 0, timer, request = 0, visible = true;
+    const stop = () => clearTimeout(timer);
     function schedule() {
       stop();
-      if (!paused && !hovered && !focused && !document.hidden && visible && !reduce.matches) {
-        timer = setTimeout(() => show((current + 1) % slides.length), 8500);
+      if (slides.length > 1 && visible && !document.hidden && !reduce.matches) {
+        timer = setTimeout(() => show((current + 1) % slides.length), 7000);
       }
-    }
-    function reflectPause() {
-      pause.hidden = reduce.matches;
-      pauseLabel.textContent = paused ? 'Start' : 'Pause';
-      pause.setAttribute('aria-label', paused ? 'Automatischen Bildwechsel starten' : 'Automatischen Bildwechsel pausieren');
     }
     async function show(index) {
       stop();
@@ -31,25 +23,22 @@
         delete img.dataset.src;
       }
       try { await img.decode(); } catch { schedule(); return; }
-      if (ticket !== request) return;
-      slides.forEach((slide, i) => { slide.classList.toggle('is-current', i === index); slide.setAttribute('aria-hidden', String(i !== index)); });
-      buttons.forEach((button, i) => button.setAttribute('aria-pressed', String(i === index)));
+      if (ticket !== request || reduce.matches || document.hidden || !visible) return;
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('is-current', i === index);
+        slide.setAttribute('aria-hidden', String(i !== index));
+      });
       current = index;
       schedule();
     }
-    buttons.forEach((button, index) => button.addEventListener('click', () => { paused = true; reflectPause(); show(index); }));
-    pause.addEventListener('click', () => { paused = !paused; reflectPause(); schedule(); });
-    gallery.addEventListener('mouseenter', () => { hovered = true; stop(); });
-    gallery.addEventListener('mouseleave', () => { hovered = false; schedule(); });
-    gallery.addEventListener('focusin', () => { focused = true; stop(); });
-    gallery.addEventListener('focusout', event => { focused = gallery.contains(event.relatedTarget); schedule(); });
-    document.addEventListener('visibilitychange', schedule);
-    reduce.addEventListener('change', () => { reflectPause(); schedule(); });
+    document.addEventListener('visibilitychange', () => { ++request; schedule(); });
+    reduce.addEventListener('change', () => { ++request; schedule(); });
     if ('IntersectionObserver' in window) {
-      new IntersectionObserver(entries => { visible = entries[0].isIntersecting; schedule(); }, { threshold: 0.15 }).observe(gallery);
+      new IntersectionObserver(entries => {
+        visible = entries[0].isIntersecting; ++request; schedule();
+      }, {threshold: 0.1}).observe(gallery);
     }
-    gallery.querySelector('[data-ng-controls]').hidden = false;
-    reflectPause(); schedule();
+    schedule();
   }
   const targets = [...document.querySelectorAll('.ng20-process-heading, .ng20-route-intro, .ng20-person-copy, .ng20-send-copy')];
   if (!reduce.matches && 'IntersectionObserver' in window) {
