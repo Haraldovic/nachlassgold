@@ -24,7 +24,8 @@
   const tickers = [...document.querySelectorAll('[data-rate-ticker]')];
   const market = document.querySelector('[data-rate-market]');
   const calc = document.querySelector('[data-rate-calculator]');
-  if (!tickers.length && !market && !calc) return;
+  const overview = document.querySelector('[data-rate-overview]');
+  if (!tickers.length && !market && !calc && !overview) return;
 
   function el(tag, className, text) {
     const node = document.createElement(tag);
@@ -84,6 +85,21 @@
       link.href = 'edelmetallkurse.html';
       ticker.replaceChildren(caption, value, asOf, link);
     }
+  }
+  function renderOverview() {
+    const items = names.map(key => {
+      const metal = metals[key];
+      const quote = quoteFor(key);
+      const item = el('article', 'ng20-rate');
+      item.dataset.archive = String(quote?.source === 'archive');
+      const name = el('span', 'ng20-rate-name');
+      name.append(el('small', '', metal.symbol), metal.name);
+      const value = el('strong', 'ng20-rate-value', quote ? money(priceFor(quote, 999)) : '–');
+      if (quote) value.append(el('small', '', '/ g'));
+      item.append(name, value, el('span', 'ng20-rate-status', quote ? status(quote) : 'Kein Kurs verfügbar'), attribution(quote));
+      return item;
+    });
+    overview.replaceChildren(...items);
   }
   function initMarket() {
     const tabs = market.querySelector('[data-metal-tabs]');
@@ -266,7 +282,7 @@
       return line;
     }));
   }
-  function render() { renderTickers(); if (market) renderMarket(); if (calc) renderCalc(); }
+  function render() { renderTickers(); if (overview) renderOverview(); if (market) renderMarket(); if (calc) renderCalc(); }
   if (!validate(bundle)) bundle = null;
   if (market) initMarket();
   if (calc) {
