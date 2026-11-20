@@ -1,0 +1,8 @@
+/* Shared desktop masthead, matching Feingold Vogel. Mobile keeps its existing menu. */
+@media(min-width:66.001rem){
+ body:is(.nachlass,.goldgezwitscher).identity-v10 .dv-head .dv-core{min-height:128px;flex-direction:column;align-items:center;justify-content:space-between;gap:14px;padding:20px 0 12px}
+ body:is(.nachlass,.goldgezwitscher).identity-v10 .dv-head .dv-logo strong{font:500 2.3rem/1 var(--serif);letter-spacing:.025em}
+ body:is(.nachlass,.goldgezwitscher).identity-v10 .dv-head .dv-logo img{width:34px;height:39px}
+ body:is(.nachlass,.goldgezwitscher).identity-v10 .dv-head .dv-logo small{text-align:center}
+ body:is(.nachlass,.goldgezwitscher).identity-v10 .dv-head .dv-links{gap:42px;justify-content:center}
+}
