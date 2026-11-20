@@ -17,4 +17,7 @@ Kein zweiter identischer Edelsteinatlas: Die bisherige Adresse bleibt als Einsti
 Ausgewertet wurden die offiziellen Auftritte von Hemmerle (Raum für ein einzelnes Stück), Boucheron (Farbedelsteine als fotografische Kapitel) und Bucherer (klare Produktinformation). Keine Bilder dieser Marken wurden übernommen. Das vom Auftraggeber gewünschte Repository https://github.com/VoltAgent/awesome-design-md diente ergänzend zur Strukturierung der Gestaltungsregeln.
 
 ## Umsetzung
-Die aktuelle Gestaltung wird durch assets/family-v10.css und assets/identity-v10.css geladen. assets/experience-v10.js enthält kleine progressive Erweiterungen. Der Stand ist durch atelier-edition=atelier-v10 im HTML erkennbar. Rechtstexte und bestehende fachliche Tabellen wurden inhaltlich nicht neu verfasst.
+Die aktuelle Gestaltung wird durch assets/family-v10.css und assets/identity-v10.css geladen. assets/experience-v10.js enthält kleine progressive Erweiterungen. Der Stand ist durch atelier-edition=atelier-v11 im HTML erkennbar. Rechtstexte und bestehende fachliche Tabellen wurden inhaltlich nicht neu verfasst.
+
+## Ergänzung · November 2026
+Begleitschein und Rechner sind direkt im Einstieg und in der Navigation erreichbar. Die Startseite erklärt Einsendung, Bewertung und Angebotsentscheidung offen; Hausbesuche haben einen eigenen Zugang. Die Versandseite zeigt eine optimierte Vorschau des unveränderten Original-PDF. Häufige Fragen und Abschläge im Rechner sind zunächst aufgeklappt. TikTok bleibt ein externer Link ohne automatisches Einbetten. Kursversorgung und Berechnungslogik sind unverändert.
