@@ -1,0 +1,146 @@
+/* Revision 13: precise spacing, quiet motion, and shared finishing details. */
+@font-face{font-family:'Cormorant Garamond';src:url('fonts/cormorant-italic.woff2') format('woff2');font-weight:300 700;font-style:italic;font-display:swap}
+body.identity-v10{--finish-gold:#8a703e}
+body.identity-v10 .dv-head{border-bottom-color:#d5d1c5}
+body.identity-v10 .dv-head .dv-brandbar{background:#f6f5ef}
+body.identity-v10 .dv-head .dv-worlds a.dv-active{box-shadow:inset 0 -2px var(--finish-gold)}
+body.identity-v10 .dv-head .dv-links a{position:relative}
+body.identity-v10 .v10-eyebrow{letter-spacing:.14em}
+body.identity-v10 .v10-action{min-height:50px;padding:15px 27px;position:relative;isolation:isolate}
+body.identity-v10 .v10-action.text{min-height:44px;padding:10px 0}
+body.identity-v10 .v10-action.text::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:1px;background:var(--finish-gold);transform:scaleX(0);transform-origin:left;transition:transform .35s ease}
+body.identity-v10 .v10-action.text:hover::after{transform:scaleX(1)}
+body.identity-v10 .site-footer{background:#f0f0e9}
+body.identity-v10 .site-footer .foot-inner{padding-top:68px}
+body.identity-v10 .site-footer .foot-base{border-color:#c8c9bc}
+body.identity-v10 .site-footer .foot-heading{color:#5d633e;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase}
+body.identity-v10 :is(.fv-signature,.ng-material-layout,.gg-format-spread) figure{margin:0}
+@media(prefers-reduced-motion:no-preference){
+ @keyframes photo-arrive{from{transform:scale(1.025)}to{transform:scale(1)}}
+ @keyframes copy-arrive{from{opacity:.2;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+ .identity-v10 :is(.fv-campaign>picture>img,.ng-person>img,.gg-show-stage>figure>img){animation:photo-arrive 1.3s cubic-bezier(.2,.65,.3,1) both}
+ .identity-v10 :is(.fv-campaign-copy,.ng-welcome-title,.gg-show-copy){animation:copy-arrive .8s ease-out both}
+}
+@media(max-width:700px){body.identity-v10 .v10-eyebrow{font-size:.875rem;letter-spacing:.08em}body.identity-v10 .dv-head .dv-worlds a{font-size:.875rem}body.identity-v10 .v10-action{padding:14px 23px}}
+@media(max-width:360px){body.identity-v10 .dv-head .dv-worlds a{font-size:.8rem}}
+
+/* Nachlassgold — a personal, precise service, in deep green and warm white. */
+body.nachlass.identity-v10{--paper:#fcfcf8;--panel:#eaf0e9;--ink:#193e34;--muted:#526158;--hair:#cbd2c5;--v10-accent:#234c3e}
+body.nachlass.identity-v10 .ng-welcome{grid-template-columns:1.15fr .85fr;gap:0 8%;padding:55px 0 0;align-items:center}
+body.nachlass.identity-v10 .ng-welcome-title{padding-bottom:35px}
+body.nachlass.identity-v10 .ng-welcome-title>.v10-eyebrow{font-size:.8rem;letter-spacing:.08em;color:#5b654d;max-width:38ch}
+body.nachlass.identity-v10 .ng-welcome h1{font-size:clamp(3.1rem,4.7vw,5.2rem);font-weight:500;letter-spacing:-.025em;line-height:1.09;max-width:none}
+body.nachlass.identity-v10 .ng-welcome h1 em{font:italic 400 1.13em/1 var(--serif);letter-spacing:-.025em;color:#6d603f}
+body.nachlass.identity-v10 .ng-welcome-title>p:not(.v10-eyebrow){font-size:1.0625rem;line-height:1.8;max-width:47ch;margin-top:28px}
+body.nachlass.identity-v10 .ng-person{position:relative;display:block;align-self:stretch;overflow:hidden;background:#d3c8b8;margin:0}
+body.nachlass.identity-v10 .ng-person img{width:100%;height:570px;object-fit:cover;object-position:50% 20%;background:#d3c8b8}
+body.nachlass.identity-v10 .ng-person figcaption{position:absolute;left:0;right:0;bottom:0;padding:70px 28px 24px;background:linear-gradient(transparent,#172e34e6);border:0;color:white;gap:5px}
+body.nachlass.identity-v10 .ng-person figcaption strong{font:400 1.8rem/1.1 var(--serif)}
+body.nachlass.identity-v10 .ng-person figcaption span{font-size:.875rem;color:#f0efe7;max-width:32ch;line-height:1.55}
+.ng-hero-assurance{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,1fr);gap:0;padding:26px 0;border-bottom:1px solid var(--hair);margin-top:20px}
+.ng-hero-assurance span{font:.875rem/1.5 var(--sans);padding:0 20px 0 0}
+.ng-hero-assurance span+span{border-left:1px solid #cccbbd;padding-left:20px}
+body.nachlass.identity-v10 .ng-live-band{background:#25483c;margin-top:30px}
+body.nachlass.identity-v10 .ng-live-band [data-rate-ticker]{padding-block:23px}
+body.nachlass.identity-v10 .ng-live-band .ng-ticker-value{font:400 2.4rem/1.1 var(--serif);letter-spacing:-.015em}
+body.nachlass.identity-v10 .ng-options{padding-block:85px}
+body.nachlass.identity-v10 .ng-section-heading{max-width:780px;margin-bottom:35px}
+body.nachlass.identity-v10 .ng-section-heading h2{font-size:clamp(2.2rem,3.2vw,3.5rem);font-weight:500;letter-spacing:-.035em}
+body.nachlass.identity-v10 .ng-route-options{border-top:1px solid #aeb7a7}
+body.nachlass.identity-v10 .ng-route-options article{padding-block:35px 30px}
+body.nachlass.identity-v10 .ng-route-options h3{font-size:1.8rem;line-height:1.2;max-width:20ch}
+body.nachlass.identity-v10 .ng-send-overview{background:#edf0e8;padding-block:70px;border-top:1px solid #d3d7ca;border-bottom:1px solid #d3d7ca}
+body.nachlass.identity-v10 .ng-send-steps li{border-color:#9c8a5f}
+body.nachlass.identity-v10 .ng-send-steps li::before{color:#79663d}
+body.nachlass.identity-v10 .ng-materials{background:#fcfcf8}
+body.nachlass.identity-v10 .ng-material-layout{grid-template-columns:1.1fr .9fr;gap:7%;padding-block:85px}
+body.nachlass.identity-v10 .ng-material-layout figure{overflow:hidden;background:#263137}
+body.nachlass.identity-v10 .ng-material-layout img{height:540px;width:100%;object-fit:cover;object-position:50% 50%}
+body.nachlass.identity-v10 .ng-material-layout h2{font-size:clamp(2.1rem,3.1vw,3.3rem)}
+body.nachlass.identity-v10 .ng-material-list{grid-template-columns:1fr;gap:0;margin-block:25px}
+body.nachlass.identity-v10 .ng-material-list li{font-size:1.0625rem;padding-block:12px;border-color:#d0d5c8}
+body.nachlass.identity-v10 .ng-valuation{padding-top:0;padding-bottom:85px}
+body.nachlass.identity-v10 .ng-valuation-grid{gap:35px}
+body.nachlass.identity-v10 .ng-purity-example{background:#f0f0e6}
+body.nachlass.identity-v10 .ng-open-answers{background:#eff1e9;padding-block:75px}
+body.nachlass.identity-v10 .ng-answer-grid{gap:35px 70px}
+body.nachlass.identity-v10 .ng-personal{background:#25483c;color:#faf8ec;padding-block:75px}
+body.nachlass.identity-v10 .ng-personal :is(h2,p,a){color:inherit}
+body.nachlass.identity-v10 .ng-personal .v10-action.primary{background:#f8f7ee;border-color:#f8f7ee;color:#25483c}
+body.nachlass.identity-v10 .ng-personal .v10-action.primary:hover{background:#d9d4c2}
+body.nachlass.identity-v10 .page-intro{background:#edf0e8;border-bottom:1px solid #d4d8ca;padding-block:46px 38px}
+body.nachlass.identity-v10 .page-intro .eyebrow{color:#6d6246}
+body.nachlass.identity-v10 .ng-side-content .photo.portrait img{height:470px;max-height:none;object-position:50% 25%}
+body.nachlass.identity-v10 .ng-shipping-intro{padding-block:45px 55px}
+body.nachlass.identity-v10 .ng-document-preview{padding:30px;background:#e6e7dc;border:1px solid #cfccba}
+.ng-packing{display:grid;grid-template-columns:1fr 1fr;gap:10%;padding-block:20px 65px}
+.ng-packing h2{margin:0 0 25px}
+.ng-packing p:not(.v10-eyebrow){font-size:1rem;line-height:1.75;max-width:44ch}
+.ng-packing .v10-action{margin-top:20px}
+.ng-packing ul{list-style:none;padding:0;margin:0;border-top:1px solid #bcbfae}
+.ng-packing li{display:grid;gap:8px;padding:23px 0 23px 31px;border-bottom:1px solid #d0d4c5;position:relative;font-size:1rem;line-height:1.6}
+.ng-packing li::before{content:'✓';color:#887343;position:absolute;left:0;top:23px;font-size:1.1rem}
+.ng-packing li strong{font-weight:500}
+.ng-packing li span{color:var(--muted)}
+.ng-calc-prep{padding:0 0 28px;margin-bottom:28px;border-bottom:1px solid var(--hair)}
+.ng-calc-prep ol{list-style:none;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin:0}
+.ng-calc-prep li{display:flex;flex-direction:column;gap:6px;font-size:1rem}
+.ng-calc-prep li strong{font-weight:500}
+.ng-calc-prep li span{font-size:.875rem;color:var(--muted)}
+.ng-calc-prep>p{font-size:.875rem;margin:20px 0 0}
+.ng-calc-prep a{text-underline-offset:4px}
+body.nachlass.identity-v10 .ng-calc-main{border-color:#bfc7b9}
+body.nachlass.identity-v10 .ng-calc-result{background:#25483c;border-color:#25483c}
+body.nachlass.identity-v10 .ng-result-total{font-family:var(--serif);font-size:clamp(3rem,5vw,4.4rem);letter-spacing:-.02em}
+.ng-mobile-actions{display:none}
+@media(max-width:1100px){body.nachlass.identity-v10 .ng-welcome{gap:0 5%}body.nachlass.identity-v10 .ng-welcome h1{font-size:3.5rem}body.nachlass.identity-v10 .ng-person img{height:570px}}
+@media(max-width:700px){
+ body.nachlass.identity-v10:has(.ng-mobile-actions){padding-bottom:calc(64px + env(safe-area-inset-bottom,0px))}
+ body.nachlass.identity-v10 .ng-welcome{grid-template-columns:1fr;padding-top:33px;gap:27px}
+ body.nachlass.identity-v10 .ng-welcome-title{padding-bottom:0}
+ body.nachlass.identity-v10 .ng-welcome-title>.v10-eyebrow{max-width:none;font-size:.8rem;letter-spacing:.05em}
+ body.nachlass.identity-v10 .ng-welcome h1{font-size:clamp(2.45rem,10vw,3.65rem);line-height:1.1;letter-spacing:-.025em}
+ body.nachlass.identity-v10 .ng-welcome h1 em{font-size:1.08em}
+ body.nachlass.identity-v10 .ng-welcome-title>p:not(.v10-eyebrow){font-size:1rem;line-height:1.75;margin-top:22px}
+ body.nachlass.identity-v10 .ng-welcome .v10-actions{margin-top:23px;gap:8px}
+ body.nachlass.identity-v10 .ng-person{display:block;width:100%}
+ body.nachlass.identity-v10 .ng-person img{height:410px;object-position:50% 18%}
+ body.nachlass.identity-v10 .ng-person figcaption{padding:65px 22px 23px}
+ body.nachlass.identity-v10 .ng-person figcaption span{font-size:.875rem}
+ .ng-hero-assurance{grid-template-columns:1fr;margin-top:0;padding:0 0 22px;gap:9px}
+ .ng-hero-assurance span,.ng-hero-assurance span+span{padding:0 0 0 15px;border:0;position:relative}
+ .ng-hero-assurance span::before{content:'';width:5px;height:1px;background:#927b49;position:absolute;left:0;top:11px}
+ body.nachlass.identity-v10 .ng-live-band{margin-top:0}
+ body.nachlass.identity-v10 .ng-live-band [data-rate-ticker]{padding-block:20px}
+ body.nachlass.identity-v10 .ng-live-band .ng-ticker-value{font-size:2.1rem}
+ body.nachlass.identity-v10 .ng-options{padding-block:50px}
+ body.nachlass.identity-v10 .ng-section-heading h2{font-size:2.25rem}
+ body.nachlass.identity-v10 .ng-route-options article{padding-block:28px}
+ body.nachlass.identity-v10 .ng-route-options h3{font-size:1.6rem}
+ body.nachlass.identity-v10 .ng-send-overview{padding-block:46px}
+ body.nachlass.identity-v10 .ng-material-layout{grid-template-columns:1fr;gap:30px;padding-block:50px}
+ body.nachlass.identity-v10 .ng-material-layout img{height:330px}
+ body.nachlass.identity-v10 .ng-valuation{padding-bottom:50px}
+ body.nachlass.identity-v10 .ng-open-answers,body.nachlass.identity-v10 .ng-personal{padding-block:48px}
+ body.nachlass.identity-v10 .ng-answer-grid{gap:30px}
+ body.nachlass.identity-v10 .ng-document-preview{max-width:330px;padding:23px}
+ .ng-packing{grid-template-columns:1fr;gap:28px;padding-block:0 45px}
+ .ng-calc-prep ol{grid-template-columns:1fr;gap:16px}
+ .ng-calc-prep li{gap:3px;padding-left:17px;border-left:1px solid #a99c7b}
+ .ng-calc-prep{margin-bottom:25px;padding-bottom:25px}
+ .ng-mobile-actions{position:fixed;z-index:30;left:0;right:0;bottom:0;display:grid;grid-template-columns:1fr 1fr;background:#fcfcf6;border-top:1px solid #b6bfaf;padding:9px 5% calc(9px + env(safe-area-inset-bottom,0px));gap:9px}
+ .ng-mobile-actions a{display:flex;align-items:center;justify-content:center;padding:11px 8px;min-height:44px;border:1px solid #25483c;text-decoration:none;font:500 .875rem/1.3 var(--sans);color:#25483c}
+ .ng-mobile-actions a+a{background:#25483c;color:white}
+ .ng-mobile-actions span{font-size:.7rem;line-height:1;margin-left:8px}
+}
+@media print{.ng-mobile-actions{display:none!important}body.nachlass.identity-v10{padding-bottom:0!important}}
+
+@media(max-width:360px){body.identity-v10 .dv-head .dv-menu{font-size:0;gap:0;min-width:44px;min-height:44px;padding:10px}body.feingold.identity-v10 .dv-head .dv-logo img{width:24px;height:30px}body.feingold.identity-v10 .dv-head .dv-logo{gap:7px}}
+
+body.nachlass.identity-v10 .page-intro{width:100%;margin:0;border-radius:0}
+body.nachlass.identity-v10 .page-intro>.wrap{width:min(90%,82rem);margin:0 auto;padding:0}
+.ng-calc-prep ol{display:flex;flex-wrap:wrap;gap:8px 25px}
+.ng-calc-prep li{display:list-item;list-style:decimal inside;font-size:.875rem;padding:0;margin:0;border:0;line-height:1.5}
+.ng-calc-prep>.v10-eyebrow{margin-bottom:12px}
+#rechner{scroll-margin-top:20px}
+@media(max-width:700px){body.nachlass.identity-v10 .page-intro{padding-block:32px 30px}.ng-calc-prep ol{gap:5px 15px}.ng-calc-prep li{display:list-item;padding:0;border:0;font-size:.875rem}.ng-calc-prep .v10-eyebrow{margin-bottom:14px}.ng-calc-prep>p{font-size:.875rem;line-height:1.6}}

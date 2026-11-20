@@ -1,0 +1,24 @@
+name: Hostinger-Kursdienst prüfen
+
+on:
+  push:
+    paths:
+      - 'hosting/hostinger/**'
+      - '.github/workflows/hostinger-rates-check.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  php-check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - name: PHP-Syntax prüfen
+        run: find hosting/hostinger -name '*.php' -print0 | xargs -0 -n1 php -l
+      - name: Kursprüfung ohne Netzwerk oder echte Schlüssel
+        run: php hosting/hostinger/update-rates.php --self-test

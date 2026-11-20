@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "currency": "EUR",
+  "unit": "g",
+  "timestamp": "2026-11-20T12:00:00Z",
+  "metals": {
+    "gold": 100,
+    "silver": 1,
+    "platinum": 40,
+    "palladium": 30
+  },
+  "_test_only": "Artificial validation fixture. Never publish these values."
+}

@@ -23,3 +23,11 @@ Die Berechnung verwendet Bruttogewichte je Metall für die Staffel und den jewei
 - [Metals.Dev API](https://metals.dev/docs) und [Anfragekontingente](https://metals.dev/pricing)
 - [Narodowy Bank Polski](https://www.nbp.pl/), [API-Beschreibung und Datenfelder](https://api.nbp.pl/en.html) sowie [Quellenangaben der NBP](https://static.nbp.pl/dokumenty/regulaminy/regulamin_nbppl.pdf)
 - [GitHub Pages mit eigenen Workflows](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)
+
+## Vorbereitung für einen späteren Umzug zu Hostinger
+
+Unter [`hosting/hostinger/README.md`](hosting/hostinger/README.md) liegt eine noch nicht aktivierte PHP-Alternative für Hostinger-Webhosting. Sie liest alle vier Metalle serverseitig von Metals.Dev und aktualisiert dasselbe öffentliche Dateiformat; das Website-Frontend bleibt unverändert. Ein API-Schlüssel und die Aktivierung des Cronjobs im ausgewählten Hosting-Account stehen noch aus.
+
+**Den Programmordner und die echte Konfiguration außerhalb von `public_html` ablegen.** Der Schlüssel gehört ausschließlich in eine private Konfigurationsdatei. Bei einem späteren Website-Upload den zuletzt geprüften öffentlichen Kursstand erhalten; nicht mit dem Paketstand überschreiben. Der vorhandene GitHub-Workflow bleibt bis zu einer ausdrücklich ausgeführten Umstellung unverändert aktiv.
+
+Ein mitgelieferter `--self-test` arbeitet ohne Schlüssel und Netzwerk nur in einem neuen temporären Testverzeichnis. Der README beschreibt den Test, den ersten echten Abruf, das Anfragekontingent und den Hostinger-Cronjob. Die Vorbereitung ist keine bereits erfolgte Hostingmigration.
