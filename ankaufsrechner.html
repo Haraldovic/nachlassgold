@@ -5,10 +5,10 @@
 <meta http-equiv="x-dns-prefetch-control" content="off"><meta name="theme-color" content="#f8f6f1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; media-src 'self'; img-src 'self'; style-src 'self'; script-src 'self'; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <title>Ankaufsrechner · Nachlassgold</title><meta name="description" content="Was sagt der Stempel in Ihrem Ring über seinen Wert aus? Mit Gewicht und Feingehalt können Sie den Materialwert Ihrer Stücke einschätzen.">
-<link rel="stylesheet" href="assets/design.css"><link rel="stylesheet" href="assets/rates.css"><script src="assets/rates-data.js" defer></script><script src="assets/rates.js?v=21" defer></script>
+<link rel="stylesheet" href="assets/design.css"><link rel="stylesheet" href="assets/rates.css"><script src="assets/rates-data.js" defer></script><script src="assets/rates.js?v=23" defer></script>
 <link rel="stylesheet" href="assets/feingehalt.css?v=9">
 <script src="assets/feingehalt.js?v=9" defer></script>
-<meta name="atelier-edition" content="atelier-v22">
+<meta name="atelier-edition" content="atelier-v23">
 <link rel="stylesheet" href="assets/haus-v3.css"><script src="assets/haus-v3.js?v=8" defer></script>
 <link rel="icon" type="image/webp" href="assets/haus-vogel.webp">
 <link rel="stylesheet" href="assets/journal-v4.css">
@@ -26,6 +26,7 @@
 <link rel="stylesheet" href="assets/contact-v20.css?v=20">
 <link rel="stylesheet" href="assets/details-v21.css?v=21">
 <link rel="stylesheet" href="assets/refinement-v22.css?v=22">
+<link rel="stylesheet" href="assets/calculator-v23.css?v=23">
 </head><body class="nachlass page-ankaufsrechner journal-v4 hauslicht identity-v10 edition22">
 <a class="skip" href="#inhalt">Zum Inhalt</a>
 <header class="dv-head" data-dv-header="nachlassgold"><div class="dv-brandbar"><nav class="dv-worlds" aria-label="Die drei Marken von Dietmar Vogelmann"><a href="https://feingold-vogel.rateriser.tech/"><span>Feingold Vogel</span><small>Schmuck &amp; Edelsteine</small></a><a href="index.html" class="dv-active" aria-current="true"><span>Nachlassgold</span><small>Edelmetallankauf</small></a><a href="https://goldgezwitscher.rateriser.tech/"><span>Goldgezwitscher</span><small>Der Videocast</small></a></nav></div><div class="dv-core dv-inner"><a class="dv-logo" href="index.html" aria-label="Nachlassgold, zur Startseite"><img src="assets/haus-vogel.webp" width="77" height="85" alt=""><span><strong>Nachlassgold</strong><small>Ankauf in Karlsbad</small></span></a>
@@ -37,14 +38,18 @@
   <p class="lead">Was sagt der Stempel in Ihrem Ring über seinen Wert aus? Mit Gewicht und Feingehalt können Sie den Materialwert Ihrer Stücke einschätzen.</p>
 </div></section>
 <section class="section wrap" aria-label="Ankaufswert berechnen">
-<aside class="ng-calc-prep" aria-labelledby="calc-prep-title"><div><p class="v10-eyebrow" id="calc-prep-title">Für eine gute erste Schätzung</p><ol><li><strong>Punze ablesen</strong></li><li><strong>Metallgewicht eingeben</strong></li><li><strong>Angebot einordnen</strong></li></ol></div><p>Feingehalt unbekannt oder Steine gefasst? <a href="kontakt.html?thema=Bewertung">Dietmar zur Bewertung fragen</a></p></aside>
-<section class="ng-calc" id="rechner" data-rate-calculator aria-label="Edelmetallwert berechnen">
+
+<section class="ng-calc ng23-calc" id="rechner" data-rate-calculator aria-label="Edelmetallwert berechnen">
   <div class="ng-calc-main">
-    <h2>Ihre Edelmetalle</h2>
-    <p>Wählen Sie den Feingehalt auf der Punze und geben Sie das Gewicht ohne Steine oder andere Fremdteile ein.</p>
-    <aside class="ng-purity" data-purity-guide data-tone="gold" aria-labelledby="punze-titel">
+    <h2>Ihre Stücke</h2>
+    <p>Wählen Sie Metall und Feingehalt. Wie viel wiegt Ihr Stück ohne Steine und andere Fremdteile?</p>
+
+
+<div data-calc-items></div>
+    <button class="ng-add" data-add-item type="button">Weiteres Stück hinzufügen</button>
+<details class="ng23-help"><summary>Was bedeutet die Zahl auf meinem Schmuck?</summary>    <aside class="ng-purity" data-purity-guide data-tone="gold" aria-labelledby="punze-titel">
       <div class="ng-purity-heading">
-        <h3 id="punze-titel">Was bedeutet die Punze?</h3>
+        <h3 id="punze-titel">Der Feinmetallanteil</h3>
         <span class="ng-purity-position" data-purity-position>Beispiel</span>
       </div>
       <div class="ng-purity-values">
@@ -54,26 +59,23 @@
       </div>
       <div class="ng-purity-track" aria-hidden="true"><progress data-purity-meter max="1000" value="585"></progress></div>
       <p class="ng-purity-description" aria-live="polite" aria-atomic="true" data-purity-description>585 von 1.000 Gewichtsteilen sind Gold. Ein Gramm dieser Legierung enthält 0,585&nbsp;g Gold.</p>
-    </aside>
-
-<div data-calc-items></div>
-    <button class="ng-add" data-add-item type="button">+ Weitere Position</button>
-    <details class="ng-terms" open><summary>Wie berechnet sich der Abschlag?</summary>
+    </aside></details>
+    <details class="ng-terms"><summary>Wie berechnet sich der Abschlag?</summary>
       <p>Wir addieren das eingegebene Gewicht aller Positionen je Metall. Die Staffel gilt dann für alle zugehörigen Positionen. Der Feingehalt bestimmt den Materialwert pro Gramm.</p>
       <dl><dt>Gold 333 bis 916</dt><dd>Bis 50 g: 12 %, darüber: 10 %</dd><dt>Gold 999</dt><dd>5 %</dd><dt>Silber 800 bis 950</dt><dd>Bis 2.000 g: 20 %, darüber: 17 %</dd><dt>Silber 999 (Münzen und Barren)</dt><dd>Bis 2.000 g: 15 %, darüber: 12 %</dd><dt>Platin und Palladium 950 / 999</dt><dd>25 %</dd></dl>
     </details>
   </div>
   <div class="ng-calc-result">
-    <h2>Ihre Schätzung</h2>
+    <p class="ng23-result-kicker">Ihr Ergebnis</p><h2>Unverbindliche Schätzung</h2>
     <div class="ng-result-total" data-total aria-live="polite">–</div>
     <div class="ng-result-status" data-result-label>Geben Sie ein Gewicht ein.</div>
     <dl class="ng-breakdown"><div><dt>Materialwert</dt><dd data-material>–</dd></div><div><dt>Ankaufsabschlag</dt><dd data-deduction>–</dd></div></dl>
     <div class="ng-sources" data-calc-sources></div>
-    <p class="ng-result-foot">Der endgültige Ankaufswert ergibt sich nach der persönlichen Prüfung.</p>
+    <p class="ng-result-foot">Kein verbindliches Ankaufsangebot. Der endgültige Preis ergibt sich erst nach der Prüfung Ihrer Stücke.</p>
     <button type="button" class="ng-copy" data-copy-result hidden>Berechnung kopieren</button>
     <span class="ng-copy-message" data-copy-message role="status"></span>
     <textarea data-copy-fallback aria-label="Berechnung zum Kopieren" rows="6" readonly hidden></textarea>
-    <a class="ng-rate-action" data-sale-request href="kontakt.html">Persönliche Beratung <span aria-hidden="true">→</span></a>
+    <a class="ng-rate-action" data-sale-request href="kontakt.html">Persönliche Beratung</a>
     <p class="ng-result-foot" data-mail-note hidden></p>
   </div>
   <noscript><p>Für den Rechner benötigen Sie JavaScript. Wir beraten Sie gerne <a href="kontakt.html">persönlich</a>.</p></noscript>

@@ -21,6 +21,7 @@
   let bundle = window.NachlassgoldRates;
   let activeMetal = 'gold';
   let currentSummary = '';
+  let lineSerial = 0;
   const tickers = [...document.querySelectorAll('[data-rate-ticker]')];
   const market = document.querySelector('[data-rate-market]');
   const calc = document.querySelector('[data-rate-calculator]');
@@ -81,7 +82,7 @@
       const caption = el('span', 'ng-ticker-label', 'Gold · 999er');
       const value = el('strong', 'ng-ticker-value', gold ? money(priceFor(gold, 999)) + ' / g' : 'Kurs offen');
       const asOf = el('span', 'ng-ticker-date', gold ? status(gold) + ' · ' + dateString(gold) : 'Derzeit ohne Kursstand');
-      const link = el('a', 'ng-ticker-link', 'Alle Kurse →');
+      const link = el('a', 'ng-ticker-link', 'Alle Kurse');
       link.href = 'edelmetallkurse.html';
       ticker.replaceChildren(caption, value, asOf, link);
     }
@@ -169,6 +170,7 @@
     select.value = String(metals[key].defaultGrade);
   }
   function addLine(focus) {
+    const lineId = ++lineSerial;
     const group = el('fieldset', 'ng-calc-line');
     const legend = el('legend', '', 'Position');
     const grid = el('div', 'ng-line-fields');
@@ -178,8 +180,11 @@
     const weight = el('input'); weight.type = 'text'; weight.inputMode = 'decimal';
     weight.placeholder = 'z. B. 12,5'; weight.maxLength = 13; weight.dataset.weight = '';
     weight.autocomplete = 'off';
+    weight.id = 'ng-weight-' + lineId;
+    weight.setAttribute('aria-describedby', 'ng-feedback-' + lineId);
     const remove = el('button', 'ng-remove', 'Entfernen'); remove.type = 'button'; remove.dataset.remove = '';
     const feedback = el('p', 'ng-line-note'); feedback.dataset.feedback = '';
+    feedback.id = 'ng-feedback-' + lineId;
     grid.append(field('Edelmetall', metal), field('Feingehalt', grade), field('Gewicht (g)', weight));
     group.append(legend, grid, feedback, remove);
     calc.querySelector('[data-calc-items]').append(group);
@@ -217,6 +222,7 @@
     let deduction = 0;
     for (const {row, key, grade, mg, invalid, quote} of lines) {
       const feedback = row.querySelector('[data-feedback]');
+      feedback.classList.toggle('is-invalid', invalid || !quote);
       if (invalid) { feedback.textContent = 'Bitte geben Sie ein positives Gewicht mit höchstens drei Nachkommastellen ein.'; continue; }
       if (!quote) { feedback.textContent = 'Für dieses Metall liegt kein nutzbarer Kurs vor.'; continue; }
       const cut = discount(key, grade, weightTotals[key]);
@@ -233,7 +239,7 @@
       !show ? 'Geben Sie ein Gewicht ein.' : historic ? 'Beispielrechnung mit archiviertem oder älterem Kursstand' : 'Unverbindlicher Ankaufswert zum Kursstand';
     const request = calc.querySelector('[data-sale-request]');
     const mailNote = calc.querySelector('[data-mail-note]');
-    request.href = 'kontakt.html'; request.textContent = 'Persönliche Beratung →';
+    request.href = 'kontakt.html'; request.textContent = 'Persönliche Beratung';
     mailNote.hidden = true; mailNote.textContent = '';
     currentSummary = '';
     if (show) {
@@ -270,7 +276,7 @@
         request.href = mail([...included, '(' + (rows.length - included.length) + ' weitere Positionen) ' + summary]);
         mailNote.textContent = 'Der E-Mail-Entwurf enthält die Gesamtschätzung und einen Auszug. Mit „Berechnung kopieren“ können Sie die vollständige Positionsliste einfügen.';
       }
-      request.textContent = 'Verkaufsanfrage vorbereiten →';
+      request.textContent = 'Verkaufsanfrage vorbereiten';
       mailNote.hidden = false;
     }
     calc.querySelector('[data-copy-result]').hidden = !show;

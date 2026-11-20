@@ -29,3 +29,7 @@ Die geprüften HIGAgentSkills (justinwetch/HIGAgentSkills, Commit 2206ff935b4aff
 Gemeinsam bleiben der Vogel, die mittige Wortmarke, die drei sichtbaren Markenlinks, lokal geladene Schriften und die helle Farbwelt. Die Unterzeilen behalten ihre eigenen Texte und dieselbe typografische Behandlung. Die Seiten haben dagegen eigene Bildkompositionen und Hierarchien: Schmuckinszenierung bei Feingold Vogel, nachvollziehbare Bewertung und vier fotografische Verkaufswege bei Nachlassgold, Gastgeber und Gesprächsformat bei Goldgezwitscher.
 
 `assets/refinement-v22.css` bündelt die Überarbeitung. Navigation zeigt die aktuelle Unterseite, wichtige Bedienelemente haben ausreichende Zielgrößen und sichtbare Fokuszustände. Fotos verwenden responsive Quellen; es gibt keine neue Animationsbibliothek und keine zusätzlichen externen Anfragen. Reduzierte Bewegung wird respektiert. Inhalte, Kursquellen, Rechner, Versand-PDF und rechtliche Seiten bleiben verfügbar.
+
+
+## Korrektur 23 · 20. November 2026
+Der vollständige Ankaufsrechner ist direkt unter der Kursübersicht der Startseite eingebunden. Eingaben und Ergebnis stehen im Vordergrund; Punze und Abschläge werden bei Bedarf aufgeklappt. Die Preistabelle ist auf der Startseite sichtbar und nutzt dieselben Daten wie die separate Kursseite. Rechner und Preislogik verwenden unveränderte Feingehalte und Abschlagsstaffeln. Die Bilder zum persönlichen Termin und Hausbesuch zeigen jetzt die jeweilige Gesprächssituation.
