@@ -26,7 +26,7 @@ Beispielpfade (USER und DOMAIN an den tatsächlichen Account anpassen):
 
 ## Erst prüfen, dann aktivieren
 
-Prüfstand der Vorbereitung: In der Erstellungsumgebung war kein PHP-Interpreter vorhanden. Der folgende PHP-Selbsttest und der echte Abruf sind deshalb vor der Aktivierung auf dem Zielsystem noch auszuführen; die öffentliche Paketierung wurde auf den Ausschluss aller privaten Dateien geprüft.
+Prüfstand der Vorbereitung: PHP-Syntax und der isolierte Selbsttest wurden am 20.11.2026 im GitHub-Workflow **Hostinger-Kursdienst prüfen** erfolgreich ausgeführt ([Prüflauf](https://github.com/Haraldovic/nachlassgold/actions/runs/44692777679)). Der Test verwendet keine echten Zugangsdaten und kein Netzwerk. In der lokalen Erstellungsumgebung ist kein PHP-Interpreter installiert. Auf dem Zielsystem sind der Selbsttest und anschließend ein echter API-Abruf vor Aktivierung des Zeitplans erforderlich, um die dortige PHP-Konfiguration und Dateirechte zu prüfen. Die öffentliche Paketierung wurde auf den Ausschluss aller privaten Dateien geprüft.
 
 Ein einzelner Testlauf, ohne API-Schlüssel und **ohne Netzwerk**:
 
