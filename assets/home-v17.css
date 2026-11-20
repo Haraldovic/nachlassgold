@@ -1,0 +1,62 @@
+/* A photographic welcome for Nachlassgold, with a separate personal introduction. */
+body.nachlass.identity-v10 .ng17-hero{position:relative;isolation:isolate;overflow:hidden;background:#f4f2eb;min-height:625px;display:flex;align-items:center}
+body.nachlass.identity-v10 .ng17-hero-photo{position:absolute;inset:0;z-index:0;display:block;overflow:hidden}
+body.nachlass.identity-v10 .ng17-hero-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 57%;max-width:none}
+body.nachlass.identity-v10 .ng17-hero::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,rgba(248,247,240,.98) 0%,rgba(248,247,240,.96) 29%,rgba(248,247,240,.82) 43%,rgba(248,247,240,.2) 61%,rgba(248,247,240,0) 76%)}
+body.nachlass.identity-v10 .ng17-hero-inner{position:relative;z-index:2;padding-block:65px}
+body.nachlass.identity-v10 .ng17-hero-copy{width:min(47%,570px);color:#21473b}
+body.nachlass.identity-v10 .ng17-hero-copy>.v10-eyebrow{font:500 .875rem/1.5 var(--sans);letter-spacing:.1em;color:#5c654d;margin:0 0 23px}
+body.nachlass.identity-v10 .ng17-hero h1{font:500 clamp(3rem,4.7vw,5.2rem)/1.07 var(--sans);letter-spacing:-.045em;max-width:none;margin:0 0 27px;color:#21473b}
+body.nachlass.identity-v10 .ng17-hero h1 em{font:italic 400 1.1em/1.06 var(--serif);letter-spacing:-.025em;color:#6d603f}
+body.nachlass.identity-v10 .ng17-hero-copy>p:not(.v10-eyebrow){font-size:1.0625rem;line-height:1.8;max-width:47ch;margin:0 0 27px;color:#324a40}
+body.nachlass.identity-v10 .ng17-hero .v10-actions{display:flex;flex-wrap:wrap;gap:10px 25px;align-items:center;margin:0}
+body.nachlass.identity-v10 .ng17-hero .v10-action.primary{background:#254b3e;border-color:#254b3e;color:#fffdf6;padding-inline:22px}
+body.nachlass.identity-v10 .ng17-hero .v10-action.primary:hover{background:#183c30;border-color:#183c30}
+body.nachlass.identity-v10 .ng17-hero .v10-action.text{color:#21473b;border-bottom-color:#546e5e}
+body.nachlass.identity-v10 .ng17-hero .ng-hero-guide{margin-top:19px;line-height:1.65;color:#324a40;max-width:100%}
+body.nachlass.identity-v10 .ng17-advisor{padding-block:38px 0}
+body.nachlass.identity-v10 .ng17-advisor-inner{display:grid;grid-template-columns:108px minmax(0,1fr) auto;gap:30px;align-items:center}
+body.nachlass.identity-v10 .ng17-advisor-photo{width:108px;height:135px;object-fit:cover;object-position:50% 18%;display:block}
+body.nachlass.identity-v10 .ng17-advisor-copy .v10-eyebrow{font-size:.8rem;letter-spacing:.1em;margin:0 0 11px;color:#59634e}
+body.nachlass.identity-v10 .ng17-advisor-copy h2{font:400 2.2rem/1.15 var(--serif);letter-spacing:-.015em;margin:0 0 9px;color:#243e37}
+body.nachlass.identity-v10 .ng17-advisor-copy>p:last-child{font-size:1rem;line-height:1.65;margin:0;max-width:58ch}
+body.nachlass.identity-v10 .ng17-advisor-link{font-size:.9375rem;min-height:44px;display:inline-flex;align-items:center;text-underline-offset:6px;color:#254b3e}
+body.nachlass.identity-v10 .ng17-assurance{display:flex;justify-content:space-between;gap:18px 28px;list-style:none;padding:25px 0;margin:28px 0 0;border-block:1px solid #d2d4c8}
+body.nachlass.identity-v10 .ng17-assurance li{font-size:.875rem;line-height:1.5;padding:0;margin:0;color:#4b5c50}
+body.nachlass.identity-v10 .ng17-assurance li::before{content:none}
+@media(min-width:1700px){body.nachlass.identity-v10 .ng17-hero{min-height:700px}}
+@media(max-width:1100px) and (min-width:701px){
+ body.nachlass.identity-v10 .ng17-hero-copy{width:55%;max-width:520px}
+ body.nachlass.identity-v10 .ng17-hero::after{background:linear-gradient(90deg,rgba(248,247,240,.98) 0%,rgba(248,247,240,.93) 37%,rgba(248,247,240,.8) 51%,rgba(248,247,240,0) 80%)}
+ body.nachlass.identity-v10 .ng17-hero h1{font-size:clamp(2.8rem,5.4vw,3.5rem)}
+ body.nachlass.identity-v10 .ng17-advisor-inner{grid-template-columns:90px minmax(0,1fr);gap:22px}
+ body.nachlass.identity-v10 .ng17-advisor-photo{width:90px;height:113px;grid-row:1/3}
+ body.nachlass.identity-v10 .ng17-advisor-link{grid-column:2;justify-self:start}
+}
+@media(max-width:700px){
+ body.nachlass.identity-v10 .ng17-hero{display:block;min-height:0;background:#f5f3ec}
+ body.nachlass.identity-v10 .ng17-hero-photo{inset:0 0 auto;height:370px}
+ body.nachlass.identity-v10 .ng17-hero-photo img{object-position:50% 62%}
+ body.nachlass.identity-v10 .ng17-hero::after{background:linear-gradient(180deg,rgba(245,243,236,0) 0px,rgba(245,243,236,0) 145px,rgba(245,243,236,.7) 220px,rgba(245,243,236,.96) 300px,#f5f3ec 365px)}
+ body.nachlass.identity-v10 .ng17-hero-inner{padding-top:228px;padding-bottom:36px}
+ body.nachlass.identity-v10 .ng17-hero-copy{width:100%;max-width:none}
+ body.nachlass.identity-v10 .ng17-hero-copy>.v10-eyebrow{font-size:.75rem;letter-spacing:.07em;margin-bottom:17px}
+ body.nachlass.identity-v10 .ng17-hero h1{font-size:clamp(2.4rem,10.2vw,3.65rem);line-height:1.08;margin-bottom:23px;letter-spacing:-.045em}
+ body.nachlass.identity-v10 .ng17-hero-copy>p:not(.v10-eyebrow){font-size:1rem;line-height:1.7;max-width:none;margin-bottom:23px}
+ body.nachlass.identity-v10 .ng17-hero .v10-actions{align-items:flex-start;flex-direction:column;gap:9px}
+ body.nachlass.identity-v10 .ng17-hero .v10-action.primary{padding-inline:17px;max-width:100%}
+ body.nachlass.identity-v10 .ng17-hero .ng-filetype{margin-left:9px;padding-left:9px}
+ body.nachlass.identity-v10 .ng17-hero .ng-hero-guide{margin-top:13px;font-size:.875rem}
+ body.nachlass.identity-v10 .ng17-advisor{padding-top:30px}
+ body.nachlass.identity-v10 .ng17-advisor-inner{grid-template-columns:82px minmax(0,1fr);gap:8px 18px;align-items:start}
+ body.nachlass.identity-v10 .ng17-advisor-photo{width:82px;height:103px;grid-row:1/3}
+ body.nachlass.identity-v10 .ng17-advisor-copy .v10-eyebrow{font-size:.75rem;letter-spacing:.04em;line-height:1.5;margin-bottom:8px}
+ body.nachlass.identity-v10 .ng17-advisor-copy h2{font-size:1.8rem;line-height:1.08;margin-bottom:10px}
+ body.nachlass.identity-v10 .ng17-advisor-copy>p:last-child{font-size:.9375rem;line-height:1.65}
+ body.nachlass.identity-v10 .ng17-advisor-link{grid-column:2;justify-self:start;font-size:.875rem}
+ body.nachlass.identity-v10 .ng17-assurance{display:grid;gap:10px;padding-block:20px;margin-top:22px}
+}
+@media(prefers-reduced-motion:no-preference){
+ @keyframes ng17-image-arrive{from{opacity:.6}to{opacity:1}}
+ body.nachlass.identity-v10 .ng17-hero-photo img{animation:ng17-image-arrive .65s ease-out both}
+}
