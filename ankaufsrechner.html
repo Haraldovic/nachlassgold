@@ -6,9 +6,9 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; media-src 'self'; img-src 'self'; style-src 'self'; script-src 'self'; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <title>Ankaufsrechner · Nachlassgold</title><meta name="description" content="Was sagt der Stempel in Ihrem Ring über seinen Wert aus? Mit Gewicht und Feingehalt können Sie den Materialwert Ihrer Stücke einschätzen.">
 <link rel="stylesheet" href="assets/design.css"><link rel="stylesheet" href="assets/rates.css"><script src="assets/rates-data.js" defer></script><script src="assets/rates.js" defer></script>
-<link rel="stylesheet" href="assets/feingehalt.css">
-<script src="assets/feingehalt.js" defer></script>
-<meta name="atelier-edition" content="atelier-v8">
+<link rel="stylesheet" href="assets/feingehalt.css?v=9">
+<script src="assets/feingehalt.js?v=9" defer></script>
+<meta name="atelier-edition" content="atelier-v9">
 <link rel="stylesheet" href="assets/haus-v3.css"><script src="assets/haus-v3.js?v=8" defer></script>
 <link rel="icon" type="image/webp" href="assets/haus-vogel.webp">
 <link rel="stylesheet" href="assets/journal-v4.css">
@@ -34,19 +34,19 @@
   <div class="ng-calc-main">
     <h2>Ihre Edelmetalle</h2>
     <p>Wählen Sie den Feingehalt auf der Punze und geben Sie das Gewicht ohne Steine oder andere Fremdteile ein.</p>
-    <aside class="ng-purity" data-purity-guide data-tone="gold" aria-label="Feingehalt erklärt">
-  <div class="ng-purity-plate" aria-hidden="true">
-    <span class="ng-purity-imprint" data-purity-stamp>585</span>
-  </div>
-  <div class="ng-purity-copy">
-    <h3>Was bedeutet die Punze?</h3>
-    <p class="ng-purity-description" aria-live="polite" aria-atomic="true" data-purity-description>Die Zahl 585 steht für 585 von 1.000 Gewichtsteilen Gold. Ein Gramm dieser Legierung enthält 0,585&nbsp;g Gold.</p>
-    <div class="ng-purity-scale">
+    <aside class="ng-purity" data-purity-guide data-tone="gold" aria-labelledby="punze-titel">
+      <div class="ng-purity-heading">
+        <h3 id="punze-titel">Was bedeutet die Punze?</h3>
+        <span class="ng-purity-position" data-purity-position>Beispiel</span>
+      </div>
+      <div class="ng-purity-values">
+        <div class="ng-purity-value"><span>Punze</span><strong data-purity-stamp>585</strong></div>
+        <span class="ng-purity-arrow" aria-hidden="true">→</span>
+        <div class="ng-purity-value"><span>Feinmetallanteil</span><strong data-purity-percent>58,5 % Gold</strong></div>
+      </div>
       <div class="ng-purity-track" aria-hidden="true"><progress data-purity-meter max="1000" value="585"></progress></div>
-      <div class="ng-purity-key"><span data-purity-position>Beispiel</span><strong data-purity-percent>58,5 % Gold</strong></div>
-    </div>
-  </div>
-</aside>
+      <p class="ng-purity-description" aria-live="polite" aria-atomic="true" data-purity-description>585 von 1.000 Gewichtsteilen sind Gold. Ein Gramm dieser Legierung enthält 0,585&nbsp;g Gold.</p>
+    </aside>
 
 <div data-calc-items></div>
     <button class="ng-add" data-add-item type="button">+ Weitere Position</button>

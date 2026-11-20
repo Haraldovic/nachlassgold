@@ -14,7 +14,6 @@
     const percentage = guide.querySelector('[data-purity-percent]');
     let rememberedRow;
     let previous = '';
-    let impression;
 
     function sync(row) {
       if (!row || !list.contains(row)) return;
@@ -26,22 +25,14 @@
       rememberedRow = row;
       const next = [metal.value, grade, label].join('/');
       if (next === previous) return;
-      const changedStamp = previous && (guide.dataset.tone !== metal.value || stamp.textContent !== String(grade));
       previous = next;
-      if (changedStamp && stamp.animate && !window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) {
-        impression?.cancel();
-        impression = stamp.animate([
-          { transform: 'rotate(-4deg) scale(.97)', opacity: .72 },
-          { transform: 'rotate(-4deg) scale(1)', opacity: 1 }
-        ], { duration: 220, easing: 'ease-out' });
-      }
       guide.dataset.tone = metal.value;
       stamp.textContent = String(grade);
       meter.value = grade;
       position.textContent = label;
       percentage.textContent = percent.format(grade / 10) + ' % ' + metalName;
-      description.textContent = 'Die Zahl ' + grade + ' steht für ' + grade + ' von 1.000 Gewichtsteilen ' +
-        metalName + '. Ein Gramm dieser Legierung enthält ' + grams.format(grade / 1000) + '\u00a0g ' + metalName + '.';
+      description.textContent = grade + ' von 1.000 Gewichtsteilen sind ' + metalName +
+        '. Ein Gramm dieser Legierung enthält ' + grams.format(grade / 1000) + '\u00a0g ' + metalName + '.';
     }
     const current = () => sync(rememberedRow && list.contains(rememberedRow) ? rememberedRow : list.querySelector('.ng-calc-line'));
     const selection = event => sync(event.target.closest('.ng-calc-line'));
